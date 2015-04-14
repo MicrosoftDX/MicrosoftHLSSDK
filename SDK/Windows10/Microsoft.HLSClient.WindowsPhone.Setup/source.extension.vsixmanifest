@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Microsoft.HLSClient.WindowsPhone.Setup..2BDD6E1E-899B-4C8F-8EF2-E6D9A9D570D5" Version="1.2.1.0" Language="en-US" Publisher="Microsoft DPE TED" />
+    <DisplayName>Microsoft Windows Phone 8.1 Adaptive Streaming SDK</DisplayName>
+    <Description xml:space="preserve">Microsoft Windows Phone 8.1 Adaptive Streaming SDK 1.2</Description>
+    <License>W8 Adaptive Streaming SDK EULA 2013.txt</License>
+    <ReleaseNotes>W8 Adaptive Streaming SDK EULA 2013.txt</ReleaseNotes>
+  </Metadata>
+  <Installation Scope="Global" AllUsers="true">
+    <InstallationTarget Id="Microsoft.ExtensionSDK" TargetPlatformIdentifier="WindowsPhoneApp" SdkName="Microsoft Windows Phone 8.1 Adaptive Streaming SDK" SdkVersion="1.2.1.0" TargetPlatformVersion="v8.1" />
+  </Installation>
+  <Dependencies>
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.ExtensionSDK" d:Source="File" Path="SDKManifest.xml" />
+  </Assets>
+</PackageManifest>

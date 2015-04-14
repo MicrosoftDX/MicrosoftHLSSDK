@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileList
+  Identity = "Microsoft HLS SDK for Windows, Version=1.2.1.0"
+  DisplayName = "Microsoft HLS SDK for Windows"
+  MinVSVersion = "14.0"
+  AppliesTo = "WindowsAppContainer + (CSharp | VB | VisualC | JavaScript)"
+   SupportedArchitectures = "x86;x64;ARM"
+  SupportsMultipleVersions="Error"
+  DependsOn = "Microsoft.VCLibs, Version=14.0">
+  <File Reference="Microsoft.HLSClient.winmd" Implementation="Microsoft.HLSClient.dll" />
+</FileList>
+

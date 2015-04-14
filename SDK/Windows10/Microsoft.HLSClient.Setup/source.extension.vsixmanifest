@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Microsoft.HLSClient.Setup.ec3bcdbf-9092-4591-87c9-1e0d843d8c43" Version="1.2.1.0" Language="en-US" Publisher="Jit Ghosh" />
+    <DisplayName>Microsoft HLS SDK for Windows</DisplayName>
+    <Description xml:space="preserve">Microsoft HLS SDK for Windows</Description>
+    <License>License.txt</License>
+    <Icon>PreviewImage.png</Icon>
+    <PreviewImage>PreviewImage.png</PreviewImage>
+  </Metadata>
+  <Installation Scope="Global" AllUsers="true">
+    <InstallationTarget Id="Microsoft.ExtensionSDK" TargetPlatformIdentifier="Windows" TargetPlatformVersion="v10.0" SdkName="Microsoft HLS SDK for Windows" SdkVersion="1.2.1.0" />
+  </Installation>
+  <Dependencies>
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.ExtensionSDK" d:Source="File" Path="SDKManifest.xml" />
+  </Assets>
+</PackageManifest>
