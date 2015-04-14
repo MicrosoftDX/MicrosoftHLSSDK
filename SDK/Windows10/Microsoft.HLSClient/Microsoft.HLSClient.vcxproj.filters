@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>84a8a716-d438-40b4-ab72-cdfeb8e9a68a</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ABI">
+      <UniqueIdentifier>{867e2a91-03cb-4cf3-b0d9-bee4d5cede02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AVCParser">
+      <UniqueIdentifier>{ce750a50-4178-4450-99f9-c3749f39e7de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Adaptive">
+      <UniqueIdentifier>{7ee0485a-6c0d-49c3-a721-bf0b5b7e3221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{8dcdeeec-7bf1-452c-b33e-b7b801137ad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypto">
+      <UniqueIdentifier>{5d4911cf-96fe-41f1-b5c3-4af7bf36f942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Downloader">
+      <UniqueIdentifier>{3e2d691d-e6a2-491c-899b-ac48c7fdd618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFTypes">
+      <UniqueIdentifier>{4a8d4e56-f909-4b34-847c-73b5f86ed33c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MP3HeaderParser">
+      <UniqueIdentifier>{e40ce932-cd47-411d-82e4-1f1edfdd8aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Playlist Object Model">
+      <UniqueIdentifier>{d3cc6430-842b-4f4f-8433-3f2607e32b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transport Stream Object Model">
+      <UniqueIdentifier>{f08bb1f6-e27c-4834-9203-abf143a7551c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{371a6487-a7d7-49a1-9474-22766c855c41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="ABI\HLSAlternateRendition.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="ABI\HLSController.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="ABI\HLSControllerFactory.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="ABI\HLSID3MetadataPayload.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="ABI\HLSPlaylist.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="ABI\HLSSegment.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="ABI\HLSVariantStream.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="AVCParser\AVCParser.cpp">
+      <Filter>AVCParser</Filter>
+    </ClCompile>
+    <ClCompile Include="Adaptive\AdaptiveHeuristics.cpp">
+      <Filter>Adaptive</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\Configuration.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypto\AESCrypto.cpp">
+      <Filter>Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="Downloader\ContentDownloader.cpp">
+      <Filter>Downloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Downloader\ContentDownloadRegistry.cpp">
+      <Filter>Downloader</Filter>
+    </ClCompile>
+    <ClCompile Include="MFTypes\HLSMediaSource.cpp">
+      <Filter>MFTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="MFTypes\HLSPlaylistHandler.cpp">
+      <Filter>MFTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="MFTypes\MFAudioStream.cpp">
+      <Filter>MFTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="MFTypes\MFStreamCommonImpl.cpp">
+      <Filter>MFTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="MFTypes\MFVideoStream.cpp">
+      <Filter>MFTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3HeaderParser\MP3HeaderParser.cpp">
+      <Filter>MP3HeaderParser</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\FileLogger.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="TransportStream\AdaptationField.cpp">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="TransportStream\PATSection.cpp">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="TransportStream\PESPacket.cpp">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="TransportStream\PMTSection.cpp">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="TransportStream\Timestamp.cpp">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="TransportStream\TransportPacket.cpp">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="TransportStream\TransportStreamParser.cpp">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Playlist\StreamInfo.cpp">
+      <Filter>Playlist Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Playlist\Rendition.cpp">
+      <Filter>Playlist Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Playlist\PlaylistHelpers.cpp">
+      <Filter>Playlist Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Playlist\Playlist.cpp">
+      <Filter>Playlist Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Playlist\MediaSegment.cpp">
+      <Filter>Playlist Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Playlist\EncryptionKey.cpp">
+      <Filter>Playlist Object Model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="ABI\HLSAlternateRendition.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSBitrateSwitchEventArgs.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSController.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSControllerFactory.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSHttpHeaderEntry.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSID3MetadataPayload.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSID3MetadataStream.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSID3TagFrame.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSInbandCCPayload.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSInitialBitrateSelectedEventArgs.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSPlaylist.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSResourceRequestEventArgs.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSSegment.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSSegmentSwitchEventArgs.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSSlidingWindow.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSStreamSelectionChangedEventArgs.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSSubtitleLocator.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\HLSVariantStream.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ABI\Interfaces.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="AVCParser\AVCParser.h">
+      <Filter>AVCParser</Filter>
+    </ClInclude>
+    <ClInclude Include="Adaptive\AdaptiveHeuristics.h">
+      <Filter>Adaptive</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Configuration.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypto\AESCrypto.h">
+      <Filter>Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="Downloader\ContentDownloader.h">
+      <Filter>Downloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Downloader\ContentDownloadRegistry.h">
+      <Filter>Downloader</Filter>
+    </ClInclude>
+    <ClInclude Include="MFTypes\HLSDummyByteStream.h">
+      <Filter>MFTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="MFTypes\HLSMediaSource.h">
+      <Filter>MFTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="MFTypes\HLSPlaylistHandler.h">
+      <Filter>MFTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="MFTypes\MFAudioStream.h">
+      <Filter>MFTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="MFTypes\MFStreamCommonImpl.h">
+      <Filter>MFTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="MFTypes\MFVideoStream.h">
+      <Filter>MFTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="MFTypes\VariableRate.h">
+      <Filter>MFTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3HeaderParser\MP3HeaderParser.h">
+      <Filter>MP3HeaderParser</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\BitOp.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\FileLogger.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\ID3TagParser.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\StopWatch.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\TaskRegistry.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportStream\AdaptationField.h">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportStream\PATSection.h">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportStream\PESPacket.h">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportStream\PMTSection.h">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportStream\SampleData.h">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportStream\Timestamp.h">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportStream\TransportPacket.h">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportStream\TransportStreamParser.h">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportStream\TSConstants.h">
+      <Filter>Transport Stream Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Playlist\StreamInfo.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Playlist\Rendition.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Playlist\PlaylistOM.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Playlist\PlaylistHelpers.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Playlist\Playlist.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Playlist\MediaSegment.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Playlist\EncryptionKey.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Playlist\Cookie.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
