@@ -1,9 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?> 
 <FileList
+  TargetPlatform="UAP" 
+  SDKType="Platform"
   Identity = "Microsoft HLS SDK for Windows, Version=1.2.1.0"
   DisplayName = "Microsoft HLS SDK for Windows"
   MinVSVersion = "14.0"
   AppliesTo = "WindowsAppContainer + (CSharp | VB | VisualC | JavaScript)"
+   TargetPlatformMinVersion="10.0.0.1"
+  TargetPlatformVersion="10.0.0.1"
    SupportedArchitectures = "x86;x64;ARM"
   SupportsMultipleVersions="Error"
   DependsOn = "Microsoft.VCLibs, Version=14.0">
