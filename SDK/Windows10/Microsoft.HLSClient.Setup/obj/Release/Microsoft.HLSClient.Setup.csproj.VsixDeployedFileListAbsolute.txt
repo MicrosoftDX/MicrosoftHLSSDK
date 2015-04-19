@@ -14,3 +14,4 @@ C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsof
 C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Retail\ARM\Microsoft.HLSClient.dll
 C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Retail\x86\Microsoft.HLSClient.dll
 C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Retail\x64\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\\PreviewImage.ico
