@@ -1,0 +1,48 @@
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\\extension.vsixmanifest
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\References\Debug\ARM\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\References\Debug\x86\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\References\Debug\x64\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\References\Retail\ARM\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\References\Retail\x86\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\References\Retail\x64\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\\License.txt
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\\PreviewImage.png
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\\SDKManifest.xml
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\Redist\Debug\ARM\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\Redist\Debug\x86\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\Redist\Debug\x64\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\Redist\Retail\ARM\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\Redist\Retail\x86\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.0\Redist\Retail\x64\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\\extension.vsixmanifest
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\References\Debug\ARM\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\References\Debug\x86\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\References\Debug\x64\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\References\Retail\ARM\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\References\Retail\x86\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\References\Retail\x64\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\\License.txt
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\\PreviewImage.png
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\\SDKManifest.xml
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Debug\ARM\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Debug\x86\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Debug\x64\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Retail\ARM\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Retail\x86\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Jit Ghosh\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Retail\x64\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\\extension.vsixmanifest
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\References\Debug\ARM\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\References\Debug\x86\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\References\Debug\x64\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\References\Retail\ARM\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\References\Retail\x86\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\References\Retail\x64\Microsoft.HLSClient.winmd
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\\License.txt
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\\PreviewImage.png
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\\SDKManifest.xml
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Debug\ARM\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Debug\x86\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Debug\x64\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Retail\ARM\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Retail\x86\Microsoft.HLSClient.dll
+C:\Users\pghosh\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\Microsoft HLS SDK for Windows\1.2.1.0\Redist\Retail\x64\Microsoft.HLSClient.dll
