@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{db9ef8bd-a055-44fc-ab99-43ae07f9f2bb}</ItemsProjectGuid>
+    <ItemsRootNamespace>Microsoft.HLSClient</ItemsRootNamespace>
+    <ItemsProjectName>Microsoft.HLSClient.Shared</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AdaptationField.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AdaptiveHeuristics.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AESCrypto.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AVCParser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\BitOp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Configuration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\ContentDownloader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\ContentDownloadRegistry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\EncryptionKey.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\FileLogger.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSAlternateRendition.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSBitrateSwitchEventArgs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSControllerFactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSHttpHeaderEntry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSID3MetadataPayload.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSID3MetadataStream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSID3TagFrame.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSInbandCCPayload.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSInitialBitrateSelectedEventArgs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSMediaSource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSPlaylist.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSPlaylistHandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSResourceRequestEventArgs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSSegment.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSSegmentSwitchEventArgs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSSlidingWindow.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSStreamSelectionChangedEventArgs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSSubtitleLocator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSVariantStream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\ID3TagParser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Interfaces.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MediaSegment.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MFAudioStream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MFStreamCommonImpl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MFVideoStream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MP3HeaderParser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PATSection.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PESPacket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Playlist.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PlaylistHelpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PlaylistOM.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PMTSection.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Rendition.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\SampleData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\StopWatch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\StreamInfo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\TaskRegistry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Timestamp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\TransportPacket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\TransportStreamParser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\TSConstants.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\VariableRate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AdaptationField.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AdaptiveHeuristics.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AESCrypto.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AVCParser.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Configuration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\ContentDownloader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\ContentDownloadRegistry.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\EncryptionKey.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\FileLogger.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSAlternateRendition.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSController.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSControllerFactory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSID3MetadataPayload.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSMediaSource.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSPlaylist.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSPlaylistHandler.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSSegment.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSVariantStream.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MediaSegment.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MFAudioStream.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MFStreamCommonImpl.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MFVideoStream.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MP3HeaderParser.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PATSection.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PESPacket.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Playlist.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PlaylistHelpers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PMTSection.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Rendition.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\StreamInfo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Timestamp.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\TransportPacket.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\TransportStreamParser.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+</Project>

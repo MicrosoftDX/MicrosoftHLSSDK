@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AdaptiveHeuristics.h">
+      <Filter>Adaptive Heuristics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AVCParser.h">
+      <Filter>AVC Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Configuration.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AESCrypto.h">
+      <Filter>Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\ContentDownloader.h">
+      <Filter>Downloader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\ContentDownloadRegistry.h">
+      <Filter>Downloader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MP3HeaderParser.h">
+      <Filter>MPEG Layer III Header Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\BitOp.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\FileLogger.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\ID3TagParser.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\StopWatch.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\TaskRegistry.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSAlternateRendition.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSBitrateSwitchEventArgs.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSController.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSControllerFactory.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSHttpHeaderEntry.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSID3MetadataPayload.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSID3MetadataStream.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSID3TagFrame.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSInbandCCPayload.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSInitialBitrateSelectedEventArgs.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSPlaylist.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSResourceRequestEventArgs.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSSegment.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSSegmentSwitchEventArgs.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSSlidingWindow.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSStreamSelectionChangedEventArgs.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSSubtitleLocator.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSVariantStream.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Interfaces.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSMediaSource.h">
+      <Filter>Media Foundation Components</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSPlaylistHandler.h">
+      <Filter>Media Foundation Components</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MFAudioStream.h">
+      <Filter>Media Foundation Components</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MFStreamCommonImpl.h">
+      <Filter>Media Foundation Components</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MFVideoStream.h">
+      <Filter>Media Foundation Components</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\VariableRate.h">
+      <Filter>Media Foundation Components</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AdaptationField.h">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PATSection.h">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PESPacket.h">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PMTSection.h">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\SampleData.h">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Timestamp.h">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\TransportPacket.h">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\TransportStreamParser.h">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\TSConstants.h">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\EncryptionKey.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MediaSegment.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Playlist.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PlaylistHelpers.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PlaylistOM.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Rendition.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Shared\StreamInfo.h">
+      <Filter>Playlist Object Model</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AdaptiveHeuristics.cpp">
+      <Filter>Adaptive Heuristics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AVCParser.cpp">
+      <Filter>AVC Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Configuration.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AESCrypto.cpp">
+      <Filter>Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\ContentDownloader.cpp">
+      <Filter>Downloader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\ContentDownloadRegistry.cpp">
+      <Filter>Downloader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MP3HeaderParser.cpp">
+      <Filter>MPEG Layer III Header Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\FileLogger.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSAlternateRendition.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSController.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSControllerFactory.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSID3MetadataPayload.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSPlaylist.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSSegment.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSVariantStream.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSMediaSource.cpp">
+      <Filter>Media Foundation Components</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\HLSPlaylistHandler.cpp">
+      <Filter>Media Foundation Components</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MFAudioStream.cpp">
+      <Filter>Media Foundation Components</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MFStreamCommonImpl.cpp">
+      <Filter>Media Foundation Components</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MFVideoStream.cpp">
+      <Filter>Media Foundation Components</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\AdaptationField.cpp">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PATSection.cpp">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PESPacket.cpp">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PMTSection.cpp">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Timestamp.cpp">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\TransportPacket.cpp">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\TransportStreamParser.cpp">
+      <Filter>MPEG2TS Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\EncryptionKey.cpp">
+      <Filter>Playlist Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\MediaSegment.cpp">
+      <Filter>Playlist Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Playlist.cpp">
+      <Filter>Playlist Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\PlaylistHelpers.cpp">
+      <Filter>Playlist Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\Rendition.cpp">
+      <Filter>Playlist Object Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Shared\StreamInfo.cpp">
+      <Filter>Playlist Object Model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ABI">
+      <UniqueIdentifier>{90c94588-336c-4bf1-9a12-fa121a3f929e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Adaptive Heuristics">
+      <UniqueIdentifier>{cafcc530-1659-4bda-b0f8-7b4c77c78346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AVC Parser">
+      <UniqueIdentifier>{4658ae12-4c46-4cab-ac0f-b53a068ab1d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{5df632ae-4e38-4570-a89c-3d4d11170aee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypto">
+      <UniqueIdentifier>{434bd5ee-33e9-4a1a-b504-6fa71247c490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Downloader">
+      <UniqueIdentifier>{4e0bd577-ed5f-46fe-ad4f-d1d65c9a2822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media Foundation Components">
+      <UniqueIdentifier>{cf3be522-f3a2-49da-b91a-b0e8d6e833f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPEG2TS Object Model">
+      <UniqueIdentifier>{96afaf83-6a65-42ee-ab12-69cefdb2a053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Playlist Object Model">
+      <UniqueIdentifier>{8a3918fb-9d8a-4d5e-a092-b1d1d5a3e03a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{a6d529e2-dba2-4f56-abbd-55cffab9bba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPEG Layer III Header Parser">
+      <UniqueIdentifier>{75c98b10-b923-433a-a19c-6351cd0921bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

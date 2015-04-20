@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Microsoft.HLSClient.WindowsPhone.Setup..2BDD6E1E-899B-4C8F-8EF2-E6D9A9D570D5" Version="1.2.1.0" Language="en-US" Publisher="Microsoft DPE TED" />
+    <DisplayName>Microsoft HLS SDK for Windows Phone 8.1</DisplayName>
+    <Description xml:space="preserve">Microsoft HLS SDK for Windows Phone 8.1</Description>
+    <License>License.txt</License>
+    <ReleaseNotes>License.txt</ReleaseNotes>
+    <Icon>PreviewImage.ico</Icon>
+    <PreviewImage>PreviewImage.ico</PreviewImage>
+  </Metadata>
+  <Installation Scope="Global" AllUsers="true">
+    <InstallationTarget Id="Microsoft.ExtensionSDK" TargetPlatformIdentifier="WindowsPhoneApp" SdkName="Microsoft HLS SDK for Windows Phone 8.1" SdkVersion="1.2.1.0" TargetPlatformVersion="v8.1" />
+  </Installation>
+  <Dependencies>
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.ExtensionSDK" d:Source="File" Path="SDKManifest.xml" />
+  </Assets>
+</PackageManifest>

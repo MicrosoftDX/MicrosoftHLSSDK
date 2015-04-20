@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileList
+  Identity = "Microsoft HLS SDK for Windows Phone 8.1, Version=1.2.1.0"
+  DisplayName = "Microsoft HLS SDK for Windows Phone 8.1"
+  MinVSVersion = "12.0" 
+   SupportedArchitectures = "x86;ARM"
+  SupportsMultipleVersions="Error"
+  DependsOn = "Microsoft.VCLibs, Version=12.0">
+  <File Reference="Microsoft.HLSClient.winmd" Implementation="Microsoft.HLSClient.dll" />
+</FileList>
+

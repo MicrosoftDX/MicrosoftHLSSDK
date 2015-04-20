@@ -3149,7 +3149,7 @@ bool Playlist::CheckAndSwitchBitrate(Playlist *&pPlaylist, ContentType type, uns
                         if (match != nullptr)
                         {
 
-#if WINVER < 0x0A00 && WINAPI_FAMILY==WINAPI_FAMILY_PC_APP 
+#if WINVER < 0x0A00 && WINAPI_FAMILY==WINAPI_FAMILY_PC_APP
                             pPlaylist->cpMediaSource->cpVideoStream->NotifyFormatChanged(nullptr); //draining the decoder on the phone  on Windows 8.1 causes a D3D access violation
 #elif WINVER >= 0x0A00 && WINAPI_FAMILY!=WINAPI_FAMILY_PHONE_APP
                             pPlaylist->cpMediaSource->cpVideoStream->NotifyFormatChanged(nullptr); //draining the decoder on the phone  on Windows 8.1 causes a D3D access violation
