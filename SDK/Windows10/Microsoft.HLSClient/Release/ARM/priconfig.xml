@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources targetOsVersion="10.0.0" majorVersion="1">
-  <index root="\" startIndexAt="F:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient\Release\ARM\layout.resfiles">
+  <index root="\" startIndexAt="D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient\Release\ARM\layout.resfiles">
     <default>
       <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />
@@ -15,7 +15,7 @@
     </default>
     <indexer-config type="RESFILES" qualifierDelimiter="." />
   </index>
-  <index root="\" startIndexAt="F:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient\Release\ARM\resources.resfiles">
+  <index root="\" startIndexAt="D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient\Release\ARM\resources.resfiles">
     <default>
       <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />
@@ -32,7 +32,7 @@
     <indexer-config type="RESJSON" initialPath="Microsoft_HLSClient" />
     <indexer-config type="RESFILES" qualifierDelimiter="." />
   </index>
-  <index root="\" startIndexAt="F:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient\Release\ARM\pri.resfiles">
+  <index root="\" startIndexAt="D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient\Release\ARM\pri.resfiles">
     <default>
       <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />
@@ -48,7 +48,7 @@
     <indexer-config type="PRI" />
     <indexer-config type="RESFILES" qualifierDelimiter="." />
   </index>
-  <index root="F:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient\Release\ARM" startIndexAt="embed.resfiles">
+  <index root="D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient\Release\ARM" startIndexAt="embed.resfiles">
     <default>
       <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />
