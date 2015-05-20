@@ -27,7 +27,7 @@
 						<ColumnDefinition Width="Auto"/>
 					</Grid.ColumnDefinitions>
 					<TextBlock Text="Playlist Uri:" Style="{StaticResource SubtitleTextBlockStyle}" VerticalAlignment="Center"/>
-					<TextBox x:Name="PlaylistUriEntry" Width="400" Height="25" VerticalAlignment="Center" Grid.Column="2"/>
+					<TextBox x:Name="PlaylistUriEntry" Width="250" Height="25" VerticalAlignment="Center" Grid.Column="2"/>
 					<Button x:Name="PlaylistUriBtn" Content="GO" Click="PlaylistUriBtn_Click" VerticalAlignment="Center" Grid.Column="4"/>
 				</Grid>
 				<GridView x:Name="PlaylistsListView" Grid.Column="2" MaxHeight="200" SelectionMode="None" IsItemClickEnabled="True" ItemClick="PlaylistsListView_ItemClick">
@@ -36,10 +36,10 @@
 					</ItemsPanelTemplate>
 					<GridView.ItemTemplate>
 						<DataTemplate>
-							<Border Width="225" Height="125" BorderThickness="2" BorderBrush="Gray" Background="Gainsboro" Padding="10" Margin="0">
+							<Border Width="200" Height="100" BorderThickness="2" BorderBrush="Gray" Background="Gainsboro" Padding="10" Margin="0">
 								<StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
-									<TextBlock Text="{Binding Title}" Style="{StaticResource TitleTextBlockStyle}" Width="200" Foreground="Black" />
-									<TextBlock Text="{Binding Description}" Style="{StaticResource BodyTextBlockStyle}" Margin="0,5,0,0" Width="200" Foreground="Black" TextTrimming="CharacterEllipsis" />
+									<TextBlock Text="{Binding Title}" Style="{StaticResource SubtitleTextBlockStyle}" Width="180" Foreground="Black" />
+									<TextBlock Text="{Binding Description}" Style="{StaticResource BodyTextBlockStyle}" Margin="0,5,0,0" Width="180" Foreground="Black" TextTrimming="CharacterEllipsis" />
 								</StackPanel>
 							</Border>
 						</DataTemplate>
@@ -50,21 +50,20 @@
 	</Page.TopAppBar>
 
 	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<pf:MediaPlayer x:Name="Player">
+        <pf:MediaPlayer x:Name="Player" IsCaptionSelectionVisible="True">
 			<pf:MediaPlayer.Plugins>
-				<pfhls:HLSPlugin />
-				<!--<pfcc608:CC608Plugin/>-->
-			</pf:MediaPlayer.Plugins>
+				<pfhls:HLSPlugin ClosedCaptionType="CC608Instream" />
+                <pfcc608:CC608Plugin/>
+            </pf:MediaPlayer.Plugins>
 		</pf:MediaPlayer>
-		
-		<Popup x:Name="StatsPopup" Width="400" Height="125" Margin="0,10,10,0" HorizontalAlignment="Right" VerticalAlignment="Top" IsOpen="False" IsLightDismissEnabled="True" Closed="StatsPopup_Closed" Opened="StatsPopup_Opened">
-			<Border BorderThickness="2" BorderBrush="Gray" Background="#B2000000" Width="400" Height="125" Padding="10" Margin="0">
-				<StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
-					<TextBlock x:Name="StatsTitle" Style="{StaticResource TitleTextBlockStyle}" Width="350" Foreground="White" TextTrimming="CharacterEllipsis" />
-					<TextBlock x:Name="StatsMsg" Style="{StaticResource BodyTextBlockStyle}" Width="350" Foreground="White" TextTrimming="CharacterEllipsis" />
-				</StackPanel>
-			</Border>
-		</Popup>
-		<Button x:Name="JitBtn" Content="Jit" Click="JitBtn_Click"/>
-	</Grid>
+
+        <Popup x:Name="StatsPopup" Width="400" Height="125" Margin="0,10,10,0" HorizontalAlignment="Right" VerticalAlignment="Top" IsOpen="False" IsLightDismissEnabled="True" Closed="StatsPopup_Closed" Opened="StatsPopup_Opened">
+            <Border BorderThickness="2" BorderBrush="Gray" Background="#B2000000" Width="400" Height="125" Padding="10" Margin="0">
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <TextBlock x:Name="StatsTitle" Style="{StaticResource TitleTextBlockStyle}" Width="350" Foreground="White" TextTrimming="CharacterEllipsis" />
+                    <TextBlock x:Name="StatsMsg" Style="{StaticResource BodyTextBlockStyle}" Width="350" Foreground="White" TextTrimming="CharacterEllipsis" />
+                </StackPanel>
+            </Border>
+        </Popup>
+    </Grid>
 </Page>

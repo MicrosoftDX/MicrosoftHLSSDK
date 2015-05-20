@@ -79,7 +79,7 @@ Windows::Foundation::IAsyncAction^ CC608HtmlController::AddNewCaptionDataInUserD
   });
 }
 
-Windows::Foundation::IAsyncAction^ CC608HtmlController::AddNewCaptionDataInUserDataEnvelopeAsync(Windows::Foundation::Collections::IMap<unsigned long long, const Platform::Array<byte_t>^>^ data)
+Windows::Foundation::IAsyncAction^ CC608HtmlController::AddNewCaptionDataInUserDataEnvelopeAsync(Windows::Foundation::Collections::IMap<unsigned long long, const Platform::Array<byte>^>^ data)
 {
   return create_async([this, data]()
   {

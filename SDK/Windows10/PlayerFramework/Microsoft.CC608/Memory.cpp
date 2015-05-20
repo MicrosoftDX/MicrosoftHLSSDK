@@ -230,7 +230,7 @@ void Memory::Dump()
     // each cell for row
     for (auto cell : Rows[i].Cells)
     {
-      // L'' causes error C2137, using L'\0' instead
+	  // L'' causes error C2317, using L'\0' instead 
       wchar_t character = cell.Character == L'\0' ? L'.' : cell.Character;
       DebugWrite(character);
     }

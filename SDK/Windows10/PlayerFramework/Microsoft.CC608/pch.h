@@ -9,4 +9,4 @@
 #include "StandardsExtensions.h"
 #include "Logger.h"
 
-typedef uint16_t byte_t;
+typedef uint8 byte_t;

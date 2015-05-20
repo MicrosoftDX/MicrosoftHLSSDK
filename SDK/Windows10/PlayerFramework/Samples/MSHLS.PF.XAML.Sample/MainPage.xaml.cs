@@ -60,9 +60,19 @@ namespace MSHLS.PF.XAML.Sample
 		private void WireHLSPluginHandlers()
 		{
 			this._HLSPlugin.HLSControllerReady += HLSPlugin_HLSControllerReady;
-		}
 
-		private void UnwireHLSPluginHandlers()
+            var plugin = Player.Plugins.FirstOrDefault(p => p.GetType() == typeof(Microsoft.PlayerFramework.CC608.CC608Plugin));
+            if(plugin != null)
+                (plugin as Microsoft.PlayerFramework.CC608.CC608Plugin).OnCaptionAdded += MainPage_OnCaptionAdded;
+        }
+
+        private void MainPage_OnCaptionAdded(object sender, Microsoft.PlayerFramework.CC608.UIElementEventArgs e)
+        {
+            var x = e.UIElement;
+            var y = x;
+        }
+
+        private void UnwireHLSPluginHandlers()
 		{
 			this._HLSPlugin.HLSControllerReady -= HLSPlugin_HLSControllerReady;
 			this.UnwireHLSPlaylistHandlers();
@@ -181,11 +191,5 @@ namespace MSHLS.PF.XAML.Sample
 				}
 			});
 		}
-
-		private void JitBtn_Click(object sender, RoutedEventArgs e)
-		{
-			var plugin = new Microsoft.PlayerFramework.CC608.CC608Plugin();
-			Player.Plugins.Add(plugin);
-        }
 	}
 }

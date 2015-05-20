@@ -34,7 +34,7 @@ RawCaptionDataInternal::RawCaptionDataInternal(RawCaptionData^ data)
   }
 }
 
-RawCaptionDataInternal::RawCaptionDataInternal(Windows::Foundation::Collections::IMap<unsigned long long, Windows::Foundation::Collections::IVector<byte_t>^>^ data)
+RawCaptionDataInternal::RawCaptionDataInternal(Windows::Foundation::Collections::IMap<unsigned long long, Windows::Foundation::Collections::IVector<byte>^>^ data)
 {
   for (auto iter = data->First(); iter->HasCurrent; iter->MoveNext())
   {
@@ -55,7 +55,7 @@ RawCaptionDataInternal::RawCaptionDataInternal(Windows::Foundation::Collections:
   }
 }
 
-RawCaptionDataInternal::RawCaptionDataInternal(Windows::Foundation::Collections::IMap<unsigned long long, const Platform::Array<byte_t>^>^ data)
+RawCaptionDataInternal::RawCaptionDataInternal(Windows::Foundation::Collections::IMap<unsigned long long, const Platform::Array<byte>^>^ data)
 {
   for (auto iter = data->First(); iter->HasCurrent; iter->MoveNext())
   {

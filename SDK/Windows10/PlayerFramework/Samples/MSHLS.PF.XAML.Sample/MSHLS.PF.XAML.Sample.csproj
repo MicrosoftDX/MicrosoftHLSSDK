@@ -14,7 +14,7 @@
     <TargetPlatformVersion>10.0.10069.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10069.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
-    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <EnableCoreRuntime>False</EnableCoreRuntime>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>MSHLS.PF.XAML.Sample_TemporaryKey.pfx</PackageCertificateKeyFile>
@@ -80,7 +80,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
-    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP;CODE_ANALYSIS</DefineConstants>
     <Optimize>true</Optimize>
     <NoWarn>;2008</NoWarn>
     <DebugType>pdbonly</DebugType>
@@ -130,22 +130,17 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Microsoft.HLSClient\Microsoft.HLSClient.vcxproj">
-      <Project>{5d1b2ca9-c3ff-4997-b91d-2b143c250042}</Project>
-      <Name>Microsoft.HLSClient</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Microsoft.CC608\Microsoft.CC608.vcxproj">
-      <Project>{7739e46e-9bf4-4908-9583-3b3f3d3638d5}</Project>
-      <Name>Microsoft.CC608</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\MSHLS.PF.XAML\MSHLS.PF.XAML.csproj">
-      <Project>{2873d363-dbd3-4fc2-bc60-48ebe806c6c2}</Project>
-      <Name>MSHLS.PF.XAML</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
+    <SDKReference Include="Microsoft HLS SDK for Windows, Version=1.2.1.0">
+      <Name>Microsoft HLS SDK for Windows</Name>
+    </SDKReference>
     <SDKReference Include="Microsoft.PlayerFramework.XAML, Version=1.0">
       <Name>Microsoft Player Framework for Windows 10 UAP</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.XAML.HLS, Version=1.0">
+      <Name>Microsoft Player Framework for Windows 10 UAP HLS</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.VCLibs, Version=14.0">
+      <Name>Microsoft Visual C++ 2015 Runtime Package for Windows Universal</Name>
     </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

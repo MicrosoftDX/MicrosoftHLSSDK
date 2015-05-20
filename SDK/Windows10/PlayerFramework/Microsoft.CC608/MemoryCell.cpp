@@ -14,7 +14,7 @@ MemoryCell::~MemoryCell()
 
 void MemoryCell::Clear()
 {
-  // L'' causes error C2137, using L'\0' instead
+  // L'' causes error C2317, using L'\0' instead
   Character = L'\0';
   Attributes.Clear();
   IsTransparentSpace = false;

@@ -12,8 +12,8 @@ class RawCaptionDataInternal
 {
 public:
   RawCaptionDataInternal(RawCaptionData^ data);
-  RawCaptionDataInternal(Windows::Foundation::Collections::IMap<unsigned long long, Windows::Foundation::Collections::IVector<byte_t>^>^ data);
-  RawCaptionDataInternal(Windows::Foundation::Collections::IMap<unsigned long long, const Platform::Array<byte_t>^>^ data);
+  RawCaptionDataInternal(Windows::Foundation::Collections::IMap<unsigned long long, Windows::Foundation::Collections::IVector<byte>^>^ data);
+  RawCaptionDataInternal(Windows::Foundation::Collections::IMap<unsigned long long, const Platform::Array<byte>^>^ data);
 
   ~RawCaptionDataInternal(void);
 

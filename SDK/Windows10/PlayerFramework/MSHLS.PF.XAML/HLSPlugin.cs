@@ -319,7 +319,7 @@ namespace Microsoft.PlayerFramework.Adaptive.HLS
             this.Instream608CaptionsAvailable(this, EventArgs.Empty);
 
           // copy the data to a WinRT-compatible data structure
-          var map = new Dictionary<ulong, IList<Byte>>();
+          var map = new Dictionary<ulong, IList<byte>>();
 
           foreach (var payload in payloads)
           {
@@ -351,10 +351,10 @@ namespace Microsoft.PlayerFramework.Adaptive.HLS
               foreach (var c in this._MediaPlayer.AvailableCaptions)
               {
                 // make sure we have the queue ready--if not, create it
-                var queue = c.Payload as Queue<Dictionary<ulong, IList<Byte>>>;
+                var queue = c.Payload as Queue<Dictionary<ulong, IList<byte>>>;
                 if (null == queue)
                 {
-                  queue = new Queue<Dictionary<ulong, IList<Byte>>>();
+                  queue = new Queue<Dictionary<ulong, IList<byte>>>();
                   c.Payload = queue;
                 }
 

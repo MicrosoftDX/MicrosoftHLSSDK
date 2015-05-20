@@ -77,7 +77,7 @@ Windows::Foundation::IAsyncAction^ CC608XamlController::AddNewCaptionDataInUserD
   });
 }
 
-Windows::Foundation::IAsyncAction^ CC608XamlController::AddNewCaptionDataInUserDataEnvelopeAsync(Windows::Foundation::Collections::IMap<unsigned long long, Windows::Foundation::Collections::IVector<byte_t>^>^ map)
+Windows::Foundation::IAsyncAction^ CC608XamlController::AddNewCaptionDataInUserDataEnvelopeAsync(Windows::Foundation::Collections::IMap<unsigned long long, Windows::Foundation::Collections::IVector<byte>^>^ map)
 {
   return create_async([this, map]()
   {
@@ -129,10 +129,10 @@ Microsoft::CC608::XamlCaptionsData^ CC608XamlController::GetXamlCaptions(uint16 
   }
   
   // given the locking, the update may have already been displayed and not be needed now
-  if (!_core.NeedsUpdate())
-  {
-    return ref new XamlCaptionsData(false, nullptr);
-  }
+  //if (!_core.NeedsUpdate())
+  //{
+  //  return ref new XamlCaptionsData(false, nullptr);
+  //}
 
   // render
   return ref new XamlCaptionsData(true, _core.GetCurrentXaml(videoHeightPixels));

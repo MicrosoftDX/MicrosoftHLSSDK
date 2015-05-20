@@ -25,7 +25,7 @@ namespace Microsoft { namespace CC608 {
     Windows::Foundation::IAsyncAction^ AddNewCaptionDataInUserDataEnvelopeAsync(RawCaptionData^ data);
 
     
-    Windows::Foundation::IAsyncAction^ AddNewCaptionDataInUserDataEnvelopeAsync(Windows::Foundation::Collections::IMap<unsigned long long, const Platform::Array<byte_t>^>^ data);
+    Windows::Foundation::IAsyncAction^ AddNewCaptionDataInUserDataEnvelopeAsync(Windows::Foundation::Collections::IMap<unsigned long long, const Platform::Array<byte>^>^ data);
 
     // used to get HTML data for captions at a given point in time
     Windows::Foundation::IAsyncOperation<Microsoft::CC608::HtmlCaptionsData^>^ GetHtmlCaptionsAsync(Windows::Foundation::TimeSpan currentPosition, uint16 videoHeightPixels);

@@ -26,7 +26,7 @@ bool MemoryRow::ContainsText() const
 {
   for (const MemoryCell& cell : Cells)
   {
-	// L'' causes error C2137, using L'\0' instead
+	// L'' causes error C2317, using L'\0' instead
     if (cell.Character != L'\0')
       return true;
   }

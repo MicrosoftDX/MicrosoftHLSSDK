@@ -55,8 +55,11 @@ namespace Microsoft.PlayerFramework.CC608
         public Caption CurrentTrack
         {
             get { return _currentTrack; }
-            set 
+            set
             {
+                _controller = new CC608XamlController();
+                this.CaptionOptions = new CaptionOptions();
+
                 var oldValue = _currentTrack;
 
                 if (oldValue == value)
@@ -91,11 +94,11 @@ namespace Microsoft.PlayerFramework.CC608
                     if (value.Payload != null)
                     {
                         // get the existing data for this new track and immediately process it
-                        var queue = value.Payload as Queue<Dictionary<ulong, IList<ushort>>>;
+                        var queue = value.Payload as Queue<Dictionary<ulong, IList<byte>>>;
                         if (queue != null)
                         {
                             // copy the data to an array for processing (we don't want to dequeue the data, as the user may keep switching back and forth!)
-                            var pendingPayloadsArray = new Dictionary<ulong, IList<ushort>>[queue.Count];
+                            var pendingPayloadsArray = new Dictionary<ulong, IList<byte>>[queue.Count];
                             queue.CopyTo(pendingPayloadsArray, 0);
 
                             foreach (var pendingPayload in pendingPayloadsArray)
@@ -148,11 +151,11 @@ namespace Microsoft.PlayerFramework.CC608
 
         private void caption_PayloadAugmented(object sender, PayloadAugmentedEventArgs e)
         {
-            var payload = e.Payload as IDictionary<ulong, IList<ushort>>;   
+            var payload = e.Payload as IDictionary<ulong, IList<byte>>;   
             ProcessCaptionsData(payload);
         }
 
-        private async void ProcessCaptionsData(IDictionary<ulong, IList<ushort>> data)
+        private async void ProcessCaptionsData(IDictionary<ulong, IList<byte>> data)
         {
             if (data != null)
             {
@@ -168,7 +171,8 @@ namespace Microsoft.PlayerFramework.CC608
             if (_captionsContainer != null)
             {
                 _controller = new CC608XamlController();
-                
+                this.CaptionOptions = new CaptionOptions();
+
                 MediaPlayer.IsCaptionsActive = (MediaPlayer.SelectedCaption as Caption != null);
 
                 _captionsContainer.SizeChanged += captionsContainer_SizeChanged;

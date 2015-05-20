@@ -22,7 +22,7 @@ public:
   Windows::Foundation::IAsyncAction^ AddNewCaptionDataInUserDataEnvelopeAsync(RawCaptionData^ data);
 
   [Windows::Foundation::Metadata::DefaultOverload]
-  Windows::Foundation::IAsyncAction^ AddNewCaptionDataInUserDataEnvelopeAsync(Windows::Foundation::Collections::IMap<unsigned long long, Windows::Foundation::Collections::IVector<byte_t>^>^ map);
+  Windows::Foundation::IAsyncAction^ AddNewCaptionDataInUserDataEnvelopeAsync(Windows::Foundation::Collections::IMap<unsigned long long, Windows::Foundation::Collections::IVector<byte>^>^ map);
 
   // Updates the model and checks if a render is required (runs async on background thread)
   Windows::Foundation::IAsyncOperation<bool>^ CaptionUpdateRequiredAsync(Windows::Foundation::TimeSpan currentPosition);

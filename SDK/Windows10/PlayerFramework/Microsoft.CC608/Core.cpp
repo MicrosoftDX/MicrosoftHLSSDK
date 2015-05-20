@@ -104,6 +104,7 @@ Windows::UI::Xaml::UIElement^ Core::GetCurrentXaml(const unsigned short videoHei
 void Core::SetCaptionTrack(const int captionTrack)
 {
   assert(captionTrack >= 0 && captionTrack < 5);
+  _xamlRenderer.SetOptions(this->Options);
 
   if (_captionTrack == captionTrack)
   {
