@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d800a72c-e1b0-488b-8c26-eff30ba3ffd9</SharedGUID>
+    <ItemsProjectGuid>{4aec4363-b259-4f72-82a6-94736da74b6b}</ItemsProjectGuid>
+    <ItemsRootNamespace>Microsoft.CC608</ItemsRootNamespace>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\ByteDecoder.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CaptionDataQueue.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CaptionOptions.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CC608HtmlController.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CC608XamlController.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Core.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\DecodeLogic.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\HtmlCaptionsData.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\HtmlRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\HtmlRowLogic.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Memory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemoryAttributes.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemoryCell.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemoryRow.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MockDataSource.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Model.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\pch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\RawCaptionData.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\RawCaptionDataInternal.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\RawCaptionDataSubset.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Timestamp.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\XamlCaptionsData.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\XamlRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\XamlRowLogic.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\ByteDecoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CaptionDataQueue.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CaptionOptions.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CC608CharColor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CC608HtmlController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CC608XamlController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Core.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\DecodedPac.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\DecodeLogic.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\HtmlCaptionsData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\HtmlRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\HtmlRowLogic.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Logger.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Memory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemoryAttributes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemoryCell.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemoryRow.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemorySize.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MockDataSource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Model.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\ModelMode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\RawCaptionData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\RawCaptionDataInternal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\RawCaptionDataSubset.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\StandardsExtensions.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Timestamp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\XamlCaptionsData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\XamlRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\XamlRowLogic.h" />
+  </ItemGroup>
+</Project>

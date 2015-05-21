@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileList
+  Identity = "Microsoft Player Framework Adaptive Streaming Plugin for HLS for Windows Phone 8.1, Version=1.2"
+  DisplayName = "Microsoft Player Framework Adaptive Streaming Plugin for HLS for Windows Phone 8.1"
+  MinVSVersion = "12.0"
+  AppliesTo = "WindowsAppContainer + (CSharp | VB | VisualC)"
+  SupportedArchitectures="x86;ARM"
+  SupportsMultipleVersions="Error"
+  ReferenceManagerEnumeration = "Files"
+  TargetFramework = "WindowsPhoneApp, version=v8.1;"
+  DependsOn = "Microsoft.VCLibs, Version=12.0">
+  <DependsOn Identity = "Microsoft Windows Phone 8.1 Adaptive Streaming SDK, Version=1.2" />
+  <File Reference="Microsoft.HLSClientExtensions.winmd" Implementation="HLSClientExtensions.WindowsPhone.dll" />
+</FileList>
+

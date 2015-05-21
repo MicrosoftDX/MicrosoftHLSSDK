@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{bdbb5926-cb6d-48c7-a7bd-d2d40c10a069}</ItemsProjectGuid>
+    <ItemsRootNamespace>Microsoft_HLSClientExtensions</ItemsRootNamespace>
+    <ItemsProjectName>HLSClientExtensions.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ByteStreamHandlerInfo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)HLSManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ByteStreamHandlerInfo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HLSManager.h" />
+  </ItemGroup>
+</Project>

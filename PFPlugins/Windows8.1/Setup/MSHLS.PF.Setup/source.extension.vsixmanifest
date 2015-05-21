@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+	<Metadata>
+		<Identity Id="MSHLS.PF.Setup.99A0C51E-5EF9-485F-935B-0988930078F7" Version="1.2.0.1" Language="en-US" Publisher="Microsoft DX TED" />
+		<DisplayName>Microsoft HLS Player Framework Plugins</DisplayName>
+		<Description xml:space="preserve">Microsoft HLS Player Framework Plugins for Windows 8.1 and Windows Phone 8.1</Description>
+		<License>License.rtf</License>
+		<GettingStartedGuide>Microsoft HLS Player Framework Plugins.rtf</GettingStartedGuide>
+		<Icon>MMPPF.ico</Icon>
+	</Metadata>
+	<Installation Scope="Global" AllUsers="true">
+		<InstallationTarget Id="Microsoft.ExtensionSDK" TargetPlatformIdentifier="Windows" TargetPlatformVersion="v8.1" SdkName="Microsoft HLS PF Plugins for Windows and Windows Phone 8.1" SdkVersion="1.2.0.1" />
+	</Installation>
+	<Dependencies>
+		<Dependency d:Source="File" DisplayName="MSHLS.PF.JS.CC608.Windows.Setup" Id="MSHLS.PF.JS.CC608.Windows.Setup.E7A38DCD-6855-4C01-873A-C5DD04F29564" Version="[1.2,2.0.0.0)" d:InstallSource="Embed" Location="MSHLS.PF.JS.CC608.Windows.Setup.vsix" />
+		<Dependency d:Source="File" DisplayName="MSHLS.PF.JS.CC608.WindowsPhone.Setup" Id="MSHLS.PF.JS.CC608.WindowsPhone.Setup.F5771D66-B1D5-49D2-A61A-113B7D51B77A" Version="[1.2,2.0.0.0)" d:InstallSource="Embed" Location="MSHLS.PF.JS.CC608.WindowsPhone.Setup.vsix" />
+		<Dependency d:Source="File" DisplayName="MSHLS.PF.JS.Windows.Setup" Id="MSHLS.PF.JS.Windows.Setup.6F51AB64-C5B3-4255-9346-9347E872A07E" Version="[1.2,2.0.0.0)" d:InstallSource="Embed" Location="MSHLS.PF.JS.Windows.Setup.vsix" />
+		<Dependency d:Source="File" DisplayName="MSHLS.PF.JS.WindowsPhone.Setup" Id="MSHLS.PF.JS.WindowsPhone.Setup.7199E29E-00EF-4614-9191-8ADEB6799748" Version="[1.2,2.0.0.0)" d:InstallSource="Embed" Location="MSHLS.PF.JS.WindowsPhone.Setup.vsix" />
+		<Dependency d:Source="File" DisplayName="MSHLS.PF.XAML.CC608.Windows.Setup" Id="MSHLS.PF.XAML.CC608.Windows.Setup.E7A38DCD-6855-4C01-873A-C5DD04F29564" Version="[1.2,2.0.0.0)" d:InstallSource="Embed" Location="MSHLS.PF.XAML.CC608.Windows.Setup.vsix" />
+		<Dependency d:Source="File" DisplayName="MSHLS.PF.XAML.CC608.WindowsPhone.Setup" Id="MSHLS.PF.XAML.CC608.WindowsPhone.Setup.90A903D3-73CB-44FB-AA38-92334C1E8D0E" Version="[1.2,2.0.0.0)" d:InstallSource="Embed" Location="MSHLS.PF.XAML.CC608.WindowsPhone.Setup.vsix" />
+		<Dependency d:Source="File" DisplayName="MSHLS.PF.XAML.Windows.Setup" Id="MSHLS.PF.XAML.Windows.Setup.6F51AB64-C5B3-4255-9346-9347E872A07E" Version="[1.2,2.0.0.0)" d:InstallSource="Embed" Location="MSHLS.PF.XAML.Windows.Setup.vsix" />
+		<Dependency d:Source="File" DisplayName="MSHLS.PF.XAML.WindowsPhone.Setup" Id="MSHLS.PF.XAML.WindowsPhone.Setup.7199E29E-00EF-4614-9191-8ADEB6799748" Version="[1.2,2.0.0.0)" d:InstallSource="Embed" Location="MSHLS.PF.XAML.WindowsPhone.Setup.vsix" />
+	</Dependencies>
+	<Assets>
+	</Assets>
+</PackageManifest>

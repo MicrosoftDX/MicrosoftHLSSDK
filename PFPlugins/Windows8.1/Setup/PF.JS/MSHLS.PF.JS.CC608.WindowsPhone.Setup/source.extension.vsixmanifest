@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="MSHLS.PF.JS.CC608.WindowsPhone.Setup.F5771D66-B1D5-49D2-A61A-113B7D51B77A" Version="1.2.0.0" Language="en-US" Publisher="Microsoft DX TED" />
+    <DisplayName>MSHLS.PF.JS.CC608.WindowsPhone.Setup</DisplayName>
+    <Description xml:space="preserve">Microsoft Player Framework 608 Captioning Plugin for Windows Phone 8.1</Description>
+    <License>License.rtf</License>
+    <Icon>MMPPF.ico</Icon>
+  </Metadata>
+  <Installation Scope="Global" AllUsers="true">
+    <InstallationTarget Id="Microsoft.ExtensionSDK" TargetPlatformIdentifier="WindowsPhoneApp" TargetPlatformVersion="v8.1" SdkName="Microsoft Player Framework 608 Captioning Plugin for Windows Phone 8.1 - JS" SdkVersion="1.2.0.0" />
+  </Installation>
+  <Dependencies>
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.ExtensionSDK" d:Source="File" Path="SDKManifest.xml" />
+  </Assets>
+</PackageManifest>

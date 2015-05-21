@@ -1,0 +1,79 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="SampleApp.XAML.MainPage"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SampleApp.XAML"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mmppf="using:Microsoft.PlayerFramework"
+    xmlns:hls="using:Microsoft.PlayerFramework.Adaptive.HLS"
+    xmlns:cc608="using:Microsoft.PlayerFramework.CC608"
+    xmlns:cc608cap="using:Microsoft.PlayerFramework.CC608.CaptionSettings"
+    mc:Ignorable="d">
+
+    <Page.TopAppBar>
+        <AppBar x:Name="TopAppBar" IsOpen="True">
+            <Grid x:Name="PlaylistSelectionGrid" Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="PlaylistUriEntryGrid" VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Playlist Uri:" Style="{StaticResource SubtitleTextBlockStyle}" VerticalAlignment="Center"/>
+                    <TextBox x:Name="PlaylistUriEntry" Width="400" Height="25" VerticalAlignment="Center" Grid.Column="2"/>
+                    <Button x:Name="PlaylistUriBtn" Content="GO" Click="PlaylistUriBtn_Click" VerticalAlignment="Center" Grid.Column="4"/>
+                </Grid>
+                <GridView x:Name="PlaylistsListView" Grid.Column="2" MaxHeight="200" ItemsSource="{Binding Playlists}" SelectionMode="None" IsItemClickEnabled="True" ItemClick="PlaylistsListView_ItemClick">
+                    <ItemsPanelTemplate>
+                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="4" ItemWidth="225" ItemHeight="100"/>
+                    </ItemsPanelTemplate>
+                    <GridView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Width="225" Height="125" BorderThickness="2" BorderBrush="Gray" Background="Gainsboro" Padding="10" Margin="0">
+                                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+                                    <TextBlock Text="{Binding Title}" Style="{StaticResource TitleTextBlockStyle}" Width="200" Foreground="Black" />
+                                    <TextBlock Text="{Binding Description}" Style="{StaticResource BodyTextBlockStyle}" Margin="0,5,0,0" Width="200" Foreground="Black" TextTrimming="CharacterEllipsis" />
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+            </Grid>
+        </AppBar>
+    </Page.TopAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <mmppf:MediaPlayer 
+            x:Name="Player" 
+            IsSkipPreviousVisible="False" 
+            IsSkipNextVisible="False" 
+            AutoPlay="True" 
+            IsCaptionSelectionVisible="True" 
+            IsAudioSelectionVisible="False" 
+            IsSignalStrengthVisible="True" 
+            IsResolutionIndicatorVisible="True">
+            <mmppf:MediaPlayer.Plugins>
+                <hls:HLSPlugin ClosedCaptionType="CC608Instream" />
+                <cc608:CC608Plugin/>
+            </mmppf:MediaPlayer.Plugins>
+        </mmppf:MediaPlayer>
+        <Popup x:Name="StatsPopup" Width="400" Height="125" Margin="0,10,10,0" HorizontalAlignment="Right" VerticalAlignment="Top" IsOpen="False" IsLightDismissEnabled="True" Closed="StatsPopup_Closed" Opened="StatsPopup_Opened">
+            <Border BorderThickness="2" BorderBrush="Gray" Background="#B2000000" Width="400" Height="125" Padding="10" Margin="0">
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <TextBlock x:Name="StatsTitle" Style="{StaticResource TitleTextBlockStyle}" Width="350" Foreground="White" TextTrimming="CharacterEllipsis" />
+                    <TextBlock x:Name="StatsMsg" Style="{StaticResource BodyTextBlockStyle}" Width="350" Foreground="White" TextTrimming="CharacterEllipsis" />
+                </StackPanel>
+            </Border>
+        </Popup>
+    </Grid>
+</Page>

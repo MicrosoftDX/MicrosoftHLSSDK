@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="MSHLS.PF.XAML.Sample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MSHLS.PF.XAML.Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel x:Name="PlaylistSelectionGrid" Margin="10">
+            <Grid x:Name="PlaylistUriEntryGrid" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Playlist Uri:" Style="{StaticResource SubtitleTextBlockStyle}" VerticalAlignment="Center"/>
+                <TextBox x:Name="PlaylistUriEntry" Width="250" Height="25" VerticalAlignment="Center" Grid.Column="2"/>
+                <Button x:Name="PlaylistUriBtn" Content="GO" Click="PlaylistUriBtn_Click" VerticalAlignment="Center" Grid.Column="4"/>
+            </Grid>
+            <GridView x:Name="PlaylistsListView" SelectionMode="None" IsItemClickEnabled="True" ItemClick="PlaylistsListView_ItemClick" Margin="0,10,0,0">
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+                <GridView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Width="200" Height="100" BorderThickness="2" BorderBrush="Gray" Background="Gainsboro" Padding="10" Margin="0">
+                            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+                                <TextBlock Text="{Binding Title}" Style="{StaticResource SubtitleTextBlockStyle}" Width="180" Foreground="Black" />
+                                <TextBlock Text="{Binding Description}" Style="{StaticResource BodyTextBlockStyle}" Margin="0,5,0,0" Width="180" Foreground="Black" TextTrimming="CharacterEllipsis" />
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </StackPanel>
+    </Grid>
+</Page>

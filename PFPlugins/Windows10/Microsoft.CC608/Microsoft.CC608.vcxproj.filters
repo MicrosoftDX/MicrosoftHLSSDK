@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="HTMLRendering">
+      <UniqueIdentifier>{c850fe0c-b412-42dd-8f56-be843a6da932}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ABI">
+      <UniqueIdentifier>{0b1ed32f-01de-42e8-8e07-3edbc119834d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{ec02b51a-f831-4d9c-9911-a2dbe650cf2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{7fe74567-ce9e-47c3-8fd0-38402bd01250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Decoder">
+      <UniqueIdentifier>{44282c20-bcd3-4ebc-beb8-7eac97d1c2d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{04971ae3-923b-4b2d-9137-3e20d90873ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MockData">
+      <UniqueIdentifier>{5ad3e95d-2516-42a9-9043-7cd186d16636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{eac3e310-bd1f-4dbd-a9ce-a43079ef2ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{5e88c0d0-a1b7-43a7-9ecc-f7d326faacd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XamlRendering">
+      <UniqueIdentifier>{1673bc58-0435-4ee6-b159-07da8164eca4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="CaptionOptions.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="CC608HtmlController.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="CC608XamlController.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlCaptionsData.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="RawCaptionData.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="RawCaptionDataSubset.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="XamlCaptionsData.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="ByteDecoder.cpp">
+      <Filter>Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="RawCaptionDataInternal.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Timestamp.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptionDataQueue.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DecodeLogic.cpp">
+      <Filter>Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlRenderer.cpp">
+      <Filter>HTMLRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlRowLogic.cpp">
+      <Filter>HTMLRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryAttributes.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryCell.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryRow.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="MockDataSource.cpp">
+      <Filter>MockData</Filter>
+    </ClCompile>
+    <ClCompile Include="XamlRenderer.cpp">
+      <Filter>XamlRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="XamlRowLogic.cpp">
+      <Filter>XamlRendering</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Logger\Logger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptionOptions.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="CC608HtmlController.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="CC608XamlController.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlCaptionsData.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="RawCaptionData.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="RawCaptionDataSubset.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="XamlCaptionsData.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteDecoder.h">
+      <Filter>Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="CC608CharColor.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="RawCaptionDataInternal.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardsExtensions.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Timestamp.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptionDataQueue.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DecodedPac.h">
+      <Filter>Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="DecodeLogic.h">
+      <Filter>Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlRenderer.h">
+      <Filter>HTMLRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlRowLogic.h">
+      <Filter>HTMLRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryAttributes.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryCell.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryRow.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="MemorySize.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelMode.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="MockDataSource.h">
+      <Filter>MockData</Filter>
+    </ClInclude>
+    <ClInclude Include="XamlRenderer.h">
+      <Filter>XamlRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="XamlRowLogic.h">
+      <Filter>XamlRendering</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

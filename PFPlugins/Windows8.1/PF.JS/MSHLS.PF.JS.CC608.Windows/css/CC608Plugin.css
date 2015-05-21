@@ -1,0 +1,85 @@
+﻿.pf-608-captions-container {
+    display: -ms-flexbox;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Consolas, monospace;
+    color: white;
+    z-index: 100;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-flow: column;
+}
+
+.pf-608-roll-up-container {
+    overflow: hidden;
+}
+
+.pf-608-roll-up {
+  animation-duration: 0.25s;
+  animation-name: pf-608-roll-up-animation;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes pf-608-roll-up-animation {
+  from {
+    top: 5.3%;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+.pf-container:not(.pf-show-608-captions-container) .pf-608-captions-container {
+    display: none;
+}
+
+.pf-608-underline {
+    text-decoration: underline;
+}
+
+.pf-608-italic {
+    font-style: italic;
+}
+
+.pf-608-white {
+    color: white;
+}
+
+.pf-608-red {
+    color: red;
+}
+
+.pf-608-green {
+    color: green;
+}
+
+.pf-608-blue {
+    color: blue;
+}
+
+.pf-608-cyan {
+    color: cyan;
+}
+
+.pf-608-yellow {
+    color: yellow;
+}
+
+.pf-608-magenta {
+    color: magenta;
+}
+
+.pf-608-black {
+    color: black;
+}
+
+.pf-608-bg-black {
+    background-color: black;
+}

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ABI">
+      <UniqueIdentifier>{0b1ed32f-01de-42e8-8e07-3edbc119834d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{ec02b51a-f831-4d9c-9911-a2dbe650cf2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{7fe74567-ce9e-47c3-8fd0-38402bd01250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Decoder">
+      <UniqueIdentifier>{44282c20-bcd3-4ebc-beb8-7eac97d1c2d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HtmlRendering">
+      <UniqueIdentifier>{c850fe0c-b412-42dd-8f56-be843a6da932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{04971ae3-923b-4b2d-9137-3e20d90873ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MockData">
+      <UniqueIdentifier>{5ad3e95d-2516-42a9-9043-7cd186d16636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{eac3e310-bd1f-4dbd-a9ce-a43079ef2ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{5e88c0d0-a1b7-43a7-9ecc-f7d326faacd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XamlRendering">
+      <UniqueIdentifier>{1673bc58-0435-4ee6-b159-07da8164eca4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CaptionOptions.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CC608XamlController.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CC608HtmlController.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\HtmlCaptionsData.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\RawCaptionData.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\RawCaptionDataSubset.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\XamlCaptionsData.cpp">
+      <Filter>ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\RawCaptionDataInternal.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Timestamp.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CaptionDataQueue.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Core.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\DecodeLogic.cpp">
+      <Filter>Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\ByteDecoder.cpp">
+      <Filter>Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\HtmlRenderer.cpp">
+      <Filter>HtmlRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\HtmlRowLogic.cpp">
+      <Filter>HtmlRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MockDataSource.cpp">
+      <Filter>MockData</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemoryAttributes.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemoryCell.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Model.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Memory.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemoryRow.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\XamlRenderer.cpp">
+      <Filter>XamlRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\XamlRowLogic.cpp">
+      <Filter>XamlRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CaptionOptions.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CC608XamlController.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CC608HtmlController.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\HtmlCaptionsData.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\RawCaptionData.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\RawCaptionDataSubset.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\XamlCaptionsData.h">
+      <Filter>ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CC608CharColor.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\StandardsExtensions.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\RawCaptionDataInternal.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Timestamp.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\CaptionDataQueue.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Core.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\DecodedPac.h">
+      <Filter>Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\DecodeLogic.h">
+      <Filter>Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\ByteDecoder.h">
+      <Filter>Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\HtmlRowLogic.h">
+      <Filter>HtmlRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\HtmlRenderer.h">
+      <Filter>HtmlRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Logger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MockDataSource.h">
+      <Filter>MockData</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemoryAttributes.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemoryCell.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\ModelMode.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemorySize.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Model.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\Memory.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\MemoryRow.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\XamlRenderer.h">
+      <Filter>XamlRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\XamlRowLogic.h">
+      <Filter>XamlRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Microsoft.CC608\pch.h" />
+  </ItemGroup>
+</Project>

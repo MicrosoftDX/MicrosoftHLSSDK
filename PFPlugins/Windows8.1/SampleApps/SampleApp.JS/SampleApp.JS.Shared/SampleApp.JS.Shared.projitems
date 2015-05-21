@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d840a251-6724-4dad-b35c-9017433ea346</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)js\default.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\data.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\navigator.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Playlists.json" />
+    <Content Include="$(MSBuildThisFileDirectory)images\gray.png" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\main\main.css" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\main\main.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\main\main.js" />
+  </ItemGroup>
+</Project>
