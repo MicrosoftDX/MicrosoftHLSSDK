@@ -24,7 +24,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <SDKReference Include="Microsoft Windows Phone 8.1 Adaptive Streaming SDK, Version=1.2.1.0" />
+    <SDKReference Include="Microsoft HLS SDK for Windows Phone 8.1, Version=1.2.1.0" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{42dacbe7-ef52-40f0-b9f1-7d68b0b5a5b6}</ProjectGuid>

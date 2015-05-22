@@ -80,8 +80,8 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <SDKReference Include="Microsoft Windows Phone 8.1 Adaptive Streaming SDK, Version=1.2.1.0">
-      <Name>Microsoft Windows Phone 8.1 Adaptive Streaming SDK</Name>
+    <SDKReference Include="Microsoft HLS SDK for Windows Phone 8.1, Version=1.2.1.0">
+      <Name>Microsoft HLS SDK for Windows Phone 8.1</Name>
     </SDKReference>
     <SDKReference Include="Microsoft.PlayerFramework.Xaml, Version=2.0.0.0">
       <Name>Microsoft Player Framework</Name>
