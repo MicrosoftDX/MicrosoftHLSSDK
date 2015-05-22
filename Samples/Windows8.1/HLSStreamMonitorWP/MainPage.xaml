@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="HLSStreamMonitorWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HLSStreamMonitorWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Windows.UI.Xaml.Controls"
+    xmlns:mmppf="using:Microsoft.PlayerFramework"
+  xmlns:mmppfhls="using:Microsoft.PlayerFramework.Adaptive.HLS"
+  xmlns:mmppfhls608="using:Microsoft.PlayerFramework.CC608"
+  xmlns:mmppfwebvtt="using:Microsoft.PlayerFramework.WebVTT"
+  xmlns:cea608ccsettings="using:Microsoft.PlayerFramework.CC608.CaptionSettings" 
+  xmlns:vttccsettings="using:Microsoft.PlayerFramework.WebVTT.CaptionSettings"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+  <Page.Resources>
+    <local:VisibilityToBoolConverter x:Key="convertVisibilityToBool"/>
+  </Page.Resources>
+  <Page.BottomAppBar>
+    <CommandBar>
+      <AppBarToggleButton Label="Settings" x:Name="btnSettings" Checked="btnSettings_Checked" Unchecked="btnSettings_Unchecked" IsChecked="False">
+        <AppBarToggleButton.Icon>
+          <BitmapIcon UriSource="ms-appx:///Assets/appbar.settings.png"/>
+        </AppBarToggleButton.Icon>
+      </AppBarToggleButton>
+      <AppBarButton Label="Favorites" x:Name="btnFavorites"  Click="btnFavorites_Click">
+        <AppBarButton.Icon>
+          <BitmapIcon UriSource="ms-appx:///Assets/appbar.list.png"/>
+        </AppBarButton.Icon>
+      </AppBarButton>
+      <AppBarToggleButton Label="Info" x:Name="tglbtnInfo" Checked="tglbtnInfo_Checked" Unchecked="tglbtnInfo_Unchecked" IsChecked="True">
+        <AppBarToggleButton.Icon>
+          <BitmapIcon UriSource="ms-appx:///Assets/appbar.information.png"/>
+        </AppBarToggleButton.Icon>
+      </AppBarToggleButton>
+    </CommandBar>
+  </Page.BottomAppBar>
+  <Grid x:Name="LayoutRoot" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+     <mmppf:MediaPlayer x:Name="mePlayer" Background="DarkGray"  AutoPlay="True"
+                         SeekWhileScrubbing="True" IsCaptionSelectionVisible="True" 
+                         Stretch="Uniform">
+      <mmppf:MediaPlayer.Plugins>
+        <mmppfhls:HLSPlugin x:Name="hlsplugin"/>
+        <mmppfhls608:CC608Plugin/>
+        <mmppfwebvtt:WebVTTPlugin/>
+        <mmppf:PlaylistPlugin AutoAdvance="True" />
+        <cea608ccsettings:CC608CaptionSettingsPlugin/>
+        <vttccsettings:WebVTTCaptionSettingsPlugin/>
+      </mmppf:MediaPlayer.Plugins>
+    </mmppf:MediaPlayer>
+    <local:PlaybackInfoOverlayUI Visibility="Collapsed" x:Name="ucPlaybackInfoOverlay" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+    <local:StreamSelectionUI x:Name="ucStreamSelection" Visibility="Collapsed" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+    <local:HLSSettingsUI x:Name="ucHLSSettings" Visibility="Collapsed" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+   
+  </Grid>
+</Page>

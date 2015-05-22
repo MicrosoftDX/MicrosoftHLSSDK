@@ -1,0 +1,63 @@
+﻿<UserControl
+    x:Class="HLSStreamMonitorWP.PlaybackInfoOverlayUI"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HLSStreamMonitorWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+  <UserControl.Resources>
+    <local:BitrateDisplayConverter x:Key="convertBitrate"/>
+    <local:BitrateUnitDisplayConverter x:Key="convertBitrateUnit"/>
+    <local:BoolToVisibilityConverter x:Key="convertBoolToVisibility"/>
+  </UserControl.Resources>
+
+  <Grid>
+    
+    <Border Background="white" Opacity="0.5" Padding="5"/>
+    <Grid Grid.Row="0">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/> 
+      </Grid.ColumnDefinitions>
+     
+      <TextBlock x:Name="tblkCurBitrate" Grid.Column="0" Text="{Binding CurrentBitrate,Converter={StaticResource convertBitrate},Mode=OneWay}" FontSize="20" VerticalAlignment="Bottom" Foreground="Black"/>
+      <TextBlock x:Name="tblkCurBitrateUnit" Grid.Column="1" Text="{Binding CurrentBitrate,Converter={StaticResource convertBitrateUnit},Mode=OneWay}" FontSize="16" Margin="1.5,0,0,0" VerticalAlignment="Bottom" Foreground="Black"/>
+      <Grid x:Name="gridBitrateSwitchInfo" Grid.Column="2" Visibility="{Binding IsBitrateShiftPending,Converter={StaticResource convertBoolToVisibility},Mode=OneWay}" Margin="1.5,0,0,0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="Auto"/> 
+        </Grid.ColumnDefinitions>
+        <Image x:Name="imgShiftUp" Grid.Column="0" Source="Assets/appbar.arrow.up.png" Height="32" Width="32" Visibility="{Binding IsBitrateShiftingUp,Converter={StaticResource convertBoolToVisibility},Mode=OneWay}"/>
+        <Image x:Name="imgShiftDown" Grid.Column="0" Source="Assets/appbar.arrow.down.png" Height="32" Width="32" Visibility="{Binding IsBitrateShiftingDown,Converter={StaticResource convertBoolToVisibility},Mode=OneWay}"/>
+        <TextBlock x:Name="tblkToBitrate" Grid.Column="1" Text="{Binding ToBitrate,Converter={StaticResource convertBitrate},Mode=OneWay}" Margin="1.5,0,0,0" FontSize="17" VerticalAlignment="Bottom" Foreground="Black"/>
+        <TextBlock x:Name="tblkToBitrateUnit" Grid.Column="2" Text="{Binding ToBitrate,Converter={StaticResource convertBitrateUnit},Mode=OneWay}" Margin="1.5,0,0,0" FontSize="14" VerticalAlignment="Bottom" Foreground="Black"/>
+      </Grid>
+      <Grid Grid.Column="3" Margin="15,0,0,0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition/>
+          <ColumnDefinition/>
+          <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0"  Source="Assets/appbar.network.png" Height="20" Width="20"/>
+        <TextBlock x:Name="tblkCurBandwidth" Grid.Column="1" Foreground="Black" Text="{Binding CurrentBandwidth,Converter={StaticResource convertBitrate},Mode=OneWay}" FontSize="20" VerticalAlignment="Bottom" Margin="2.5,0,0,0"/>
+        <TextBlock x:Name="tblkCurBandwidthUnit" Grid.Column="2"  Foreground="Black" Text="{Binding CurrentBandwidth,Converter={StaticResource convertBitrateUnit},Mode=OneWay}" FontSize="16" Margin="1.5,0,0,0" VerticalAlignment="Bottom"/>
+      </Grid>
+      <StackPanel x:Name="spSegInfo"  Orientation="Horizontal" Grid.Column="4" Margin="15,0,0,0">
+        <TextBlock  Text="Seg:" VerticalAlignment="Bottom" FontSize="17" Foreground="Black"/>
+        <TextBlock x:Name="tblkCurSegment" Text="{Binding CurrentSegment,Mode=OneWay}" Foreground="Black" Margin="2.5,0,0,0" VerticalAlignment="Bottom" FontSize="17"/>
+        <StackPanel x:Name="spVODSegTotal" Orientation="Horizontal" Visibility="{Binding ShowTotalSegmentCount,Converter={StaticResource convertBoolToVisibility},Mode=OneWay}" Margin="2.5,0,0,0">
+          <TextBlock Text="/" VerticalAlignment="Bottom" FontSize="17" Foreground="Black"></TextBlock>
+          <TextBlock x:Name="tblkTotalSegmentCount" Text="{Binding TotalSegmentCount,Mode=OneWay}"  Foreground="Black" Margin="2.5,0,0,0" VerticalAlignment="Bottom" FontSize="17"/>
+        </StackPanel>
+      </StackPanel>
+    </Grid>
+  </Grid>
+</UserControl>
