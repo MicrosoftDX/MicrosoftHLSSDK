@@ -112,9 +112,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Logger\Logger.h">
-      <Filter>Logger</Filter>
-    </ClInclude>
     <ClInclude Include="CaptionOptions.h">
       <Filter>ABI</Filter>
     </ClInclude>
@@ -198,6 +195,9 @@
     </ClInclude>
     <ClInclude Include="XamlRowLogic.h">
       <Filter>XamlRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Logger</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

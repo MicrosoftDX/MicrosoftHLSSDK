@@ -57,6 +57,7 @@
     <ClInclude Include="CC608HtmlController.h" />
     <ClInclude Include="CC608XamlController.h" />
     <ClInclude Include="HtmlCaptionsData.h" />
+    <ClInclude Include="Logger.h" />
     <ClInclude Include="RawCaptionData.h" />
     <ClInclude Include="RawCaptionDataSubset.h" />
     <ClInclude Include="XamlCaptionsData.h" />
@@ -71,7 +72,6 @@
     <ClInclude Include="DecodeLogic.h" />
     <ClInclude Include="HtmlRenderer.h" />
     <ClInclude Include="HtmlRowLogic.h" />
-    <ClInclude Include="Logger\Logger.h" />
     <ClInclude Include="MockDataSource.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="MemoryAttributes.h" />
