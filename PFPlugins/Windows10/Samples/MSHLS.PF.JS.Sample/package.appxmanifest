@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="6b8dca88-a29b-4bfd-91b8-1c47f0b11f69"
+    Version="1.0.0.0"
+    Publisher="CN=Tim" />
+
+  <mp:PhoneIdentity PhoneProductId="6b8dca88-a29b-4bfd-91b8-1c47f0b11f69" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>MSHLS.PF.JS.Sample</DisplayName>
+    <PublisherDisplayName>Tim</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+
+  <Applications>
+    <Application
+      Id="App"
+      StartPage="default.html">
+
+      <uap:VisualElements
+        DisplayName="MSHLS.PF.JS.Sample"
+        Description="MSHLS.PF.JS.Sample"
+        BackgroundColor="#464646"
+        Square150x150Logo="images\Logo.png"
+        Square44x44Logo="images\SmallLogo.png">
+
+        <uap:SplashScreen Image="images\splashscreen.png" />
+
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>Microsoft.HLSClient.dll</Path>
+        <ActivatableClass ActivatableClassId="Microsoft.HLSClient.HLSPlaylistHandler" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+
+</Package>
