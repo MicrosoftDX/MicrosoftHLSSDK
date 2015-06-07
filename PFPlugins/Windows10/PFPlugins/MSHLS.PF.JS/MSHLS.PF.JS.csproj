@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2873D363-DBD3-4FC2-BC60-48EBE806C6C2}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{6558280E-210C-447E-B75F-9C62A9FD58AB}</ProjectGuid>
+    <OutputType>winmdobj</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MSHLS.PF.XAML</RootNamespace>
-    <AssemblyName>MSHLS.PF.XAML</AssemblyName>
+    <RootNamespace>MSHLS.PF.JS</RootNamespace>
+    <AssemblyName>MSHLS.PF.JS</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10069.0</TargetPlatformVersion>
@@ -16,6 +16,7 @@
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <AllowCrossPlatformRetargeting>false</AllowCrossPlatformRetargeting>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -109,31 +110,25 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AudioStreamWrapper.cs" />
-    <Compile Include="CaptionOptions.cs" />
-    <Compile Include="CC608Plugin.cs" />
-    <Compile Include="Constants.cs" />
-    <Compile Include="HLSPlugin.cs" />
-    <Compile Include="HLSWebVTTCaptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UIElementEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\CC608Plugin.css" />
+    <Content Include="js\CaptionSettings.js" />
+    <Content Include="js\CC608Plugin.js" />
+    <Content Include="js\HLSPlugin.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft HLS SDK for Windows, Version=1.2.1.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Microsoft.CC608\Microsoft.CC608.vcxproj">
       <Project>{7739e46e-9bf4-4908-9583-3b3f3d3638d5}</Project>
       <Name>Microsoft.CC608</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <SDKReference Include="Microsoft HLS SDK for Windows, Version=1.2.1.0">
-      <Name>Microsoft HLS SDK for Windows</Name>
-    </SDKReference>
-    <SDKReference Include="Microsoft.PlayerFramework.Xaml, Version=3.0.0.0">
-      <Name>Microsoft Player Framework</Name>
-    </SDKReference>
-    <SDKReference Include="Microsoft.VCLibs, Version=14.0">
-      <Name>Microsoft Visual C++ 2015 Runtime Package for Windows Universal</Name>
-    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
