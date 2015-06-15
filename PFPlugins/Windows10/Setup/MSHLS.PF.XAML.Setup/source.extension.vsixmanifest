@@ -2,8 +2,8 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="Microsoft.PlayerFramework.Win10.XAML.HLS" Version="1.0" Language="en-US" Publisher="Microsoft" />
-    <DisplayName>Player Framework Win 10 XAML UAP - HLS</DisplayName>
-    <Description xml:space="preserve">Microsoft Player Framework for Windows 10 - XAML UAP HLS</Description>
+    <DisplayName>Player Framework Win 10 XAML UWP - HLS</DisplayName>
+    <Description xml:space="preserve">Microsoft Player Framework for Windows 10 - XAML UWP HLS</Description>
     <MoreInfo>http://playerframework.codeplex.com</MoreInfo>
     <License>License.rtf</License>
     <Icon>MMPPF.ico</Icon>

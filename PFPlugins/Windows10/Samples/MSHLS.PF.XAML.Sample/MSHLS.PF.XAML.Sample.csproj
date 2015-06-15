@@ -141,15 +141,12 @@
     <SDKReference Include="Microsoft.PlayerFramework.Xaml, Version=3.0.0.0">
       <Name>Microsoft Player Framework</Name>
     </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.XAML.HLS, Version=1.0">
+      <Name>Microsoft Player Framework for Windows 10 UWP HLS</Name>
+    </SDKReference>
     <SDKReference Include="Microsoft.VCLibs, Version=14.0">
       <Name>Microsoft Visual C++ 2015 Runtime Package for Windows Universal</Name>
     </SDKReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\PFPlugins\MSHLS.PF.XAML\MSHLS.PF.XAML.csproj">
-      <Project>{2873d363-dbd3-4fc2-bc60-48ebe806c6c2}</Project>
-      <Name>MSHLS.PF.XAML</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

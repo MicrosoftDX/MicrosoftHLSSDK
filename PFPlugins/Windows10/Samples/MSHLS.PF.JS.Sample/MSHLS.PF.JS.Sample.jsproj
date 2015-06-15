@@ -80,11 +80,11 @@
   <ItemGroup>
     <SDKReference Include="Microsoft.PlayerFramework.Js, Version=3.0.0.0" />
     <SDKReference Include="Microsoft HLS SDK for Windows, Version=1.2.1.0" />
+    <SDKReference Include="Microsoft.PlayerFramework.WinJS.HLS, Version=1.0" />
+    <SDKReference Include="Microsoft.VCLibs, Version=14.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Microsoft.CC608\Microsoft.CC608.vcxproj" />
-    <ProjectReference Include="..\..\PFPlugins\HLSClientExtensions\HLSClientExtensions.vcxproj" />
-    <ProjectReference Include="..\..\PFPlugins\MSHLS.PF.JS\MSHLS.PF.JS.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment
