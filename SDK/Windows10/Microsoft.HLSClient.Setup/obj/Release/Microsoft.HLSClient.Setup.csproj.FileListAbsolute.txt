@@ -16,3 +16,12 @@ D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup
 D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\obj\Release\Microsoft.HLSClient.Setup.dll
 D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\obj\Release\Microsoft.HLSClient.Setup.pdb
 D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\obj\Release\extension.vsixmanifest
+C:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\bin\Release\License.txt
+C:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\bin\Release\PreviewImage.ico
+C:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\bin\Release\SDKManifest.xml
+C:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\bin\Release\Microsoft.HLSClient.Setup.vsix
+C:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\bin\Release\extension.vsixmanifest
+C:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\obj\Release\Microsoft.HLSClient.Setup.csprojResolveAssemblyReference.cache
+C:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\obj\Release\Microsoft.HLSClient.Setup.dll
+C:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\obj\Release\Microsoft.HLSClient.Setup.pdb
+C:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\obj\Release\extension.vsixmanifest
