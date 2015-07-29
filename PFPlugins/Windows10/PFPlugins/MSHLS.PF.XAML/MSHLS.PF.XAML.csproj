@@ -128,8 +128,8 @@
     <SDKReference Include="Microsoft HLS SDK for Windows, Version=1.2.1.0">
       <Name>Microsoft HLS SDK for Windows</Name>
     </SDKReference>
-    <SDKReference Include="Microsoft.PlayerFramework.XAML, Version=1.0">
-      <Name>Microsoft Player Framework for Windows 10 UAP</Name>
+    <SDKReference Include="Microsoft.PlayerFramework.Xaml, Version=3.0.0.0">
+      <Name>Microsoft Player Framework</Name>
     </SDKReference>
     <SDKReference Include="Microsoft.VCLibs, Version=14.0">
       <Name>Microsoft Visual C++ 2015 Runtime Package for Windows Universal</Name>

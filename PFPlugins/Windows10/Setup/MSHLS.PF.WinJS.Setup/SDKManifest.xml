@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<FileList
+  Identity="Microsoft.PlayerFramework.Win10.WinJS.HLS, Version=1.0"
+  DisplayName="Microsoft Player Framework for Windows 10 UWP HLS"
+  TargetPlatform="UAP"
+  TargetPlatformMinVersion="10.0.10069.0"
+  TargetPlatformVersion="10.0.10069.0"
+  SDKType="External"
+  AppliesTo="WindowsAppContainer + (JavaScript)"
+  MinVSVersion="14.0"
+  SupportsMultipleVersions="Error">
+  <DependsOn Identity="Microsoft.PlayerFramework.Js, Version=3.0.0.0"/>
+  <DependsOn Identity="Microsoft HLS SDK for Windows, Version=1.2.1.0"/>
+  <File Reference="Microsoft.HLSClientExtensions.winmd" Implementation="HLSClientExtensions.dll" />
+  <File Content="js\CC608Plugin.js" />
+  <File Content="css\CC608Plugin.css" />
+  <File Content="js\HLSPlugin.js" />
+  <File Content="js\CaptionSettings.js" />
+</FileList>
+
+
+
