@@ -26,102 +26,8 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Shared\AdaptationField.cpp" />
-    <ClCompile Include="..\..\Shared\AdaptiveHeuristics.cpp" />
-    <ClCompile Include="..\..\Shared\AESCrypto.cpp" />
-    <ClCompile Include="..\..\Shared\AVCParser.cpp" />
-    <ClCompile Include="..\..\Shared\Configuration.cpp" />
-    <ClCompile Include="..\..\Shared\ContentDownloader.cpp" />
-    <ClCompile Include="..\..\Shared\ContentDownloadRegistry.cpp" />
-    <ClCompile Include="..\..\Shared\EncryptionKey.cpp" />
-    <ClCompile Include="..\..\Shared\FileLogger.cpp" />
-    <ClCompile Include="..\..\Shared\HLSAlternateRendition.cpp" />
-    <ClCompile Include="..\..\Shared\HLSController.cpp" />
-    <ClCompile Include="..\..\Shared\HLSControllerFactory.cpp" />
-    <ClCompile Include="..\..\Shared\HLSID3MetadataPayload.cpp" />
-    <ClCompile Include="..\..\Shared\HLSMediaSource.cpp" />
-    <ClCompile Include="..\..\Shared\HLSPlaylist.cpp" />
-    <ClCompile Include="..\..\Shared\HLSPlaylistHandler.cpp" />
-    <ClCompile Include="..\..\Shared\HLSSegment.cpp" />
-    <ClCompile Include="..\..\Shared\HLSVariantStream.cpp" />
-    <ClCompile Include="..\..\Shared\MediaSegment.cpp" />
-    <ClCompile Include="..\..\Shared\MFAudioStream.cpp" />
-    <ClCompile Include="..\..\Shared\MFStreamCommonImpl.cpp" />
-    <ClCompile Include="..\..\Shared\MFVideoStream.cpp" />
-    <ClCompile Include="..\..\Shared\MP3HeaderParser.cpp" />
-    <ClCompile Include="..\..\Shared\PATSection.cpp" />
-    <ClCompile Include="..\..\Shared\PESPacket.cpp" />
-    <ClCompile Include="..\..\Shared\Playlist.cpp" />
-    <ClCompile Include="..\..\Shared\PlaylistHelpers.cpp" />
-    <ClCompile Include="..\..\Shared\PMTSection.cpp" />
-    <ClCompile Include="..\..\Shared\Rendition.cpp" />
-    <ClCompile Include="..\..\Shared\StreamInfo.cpp" />
-    <ClCompile Include="..\..\Shared\Timestamp.cpp" />
-    <ClCompile Include="..\..\Shared\TransportPacket.cpp" />
-    <ClCompile Include="..\..\Shared\TransportStreamParser.cpp" />
-    <ClCompile Include="pch.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Shared\AdaptationField.h" />
-    <ClInclude Include="..\..\Shared\AdaptiveHeuristics.h" />
-    <ClInclude Include="..\..\Shared\AESCrypto.h" />
-    <ClInclude Include="..\..\Shared\AVCParser.h" />
-    <ClInclude Include="..\..\Shared\BitOp.h" />
-    <ClInclude Include="..\..\Shared\Configuration.h" />
-    <ClInclude Include="..\..\Shared\ContentDownloader.h" />
-    <ClInclude Include="..\..\Shared\ContentDownloadRegistry.h" />
-    <ClInclude Include="..\..\Shared\Cookie.h" />
-    <ClInclude Include="..\..\Shared\EncryptionKey.h" />
-    <ClInclude Include="..\..\Shared\FileLogger.h" />
-    <ClInclude Include="..\..\Shared\HLSAlternateRendition.h" />
-    <ClInclude Include="..\..\Shared\HLSBitrateSwitchEventArgs.h" />
-    <ClInclude Include="..\..\Shared\HLSController.h" />
-    <ClInclude Include="..\..\Shared\HLSControllerFactory.h" />
-    <ClInclude Include="..\..\Shared\HLSDummyByteStream.h" />
-    <ClInclude Include="..\..\Shared\HLSHttpHeaderEntry.h" />
-    <ClInclude Include="..\..\Shared\HLSID3MetadataPayload.h" />
-    <ClInclude Include="..\..\Shared\HLSID3MetadataStream.h" />
-    <ClInclude Include="..\..\Shared\HLSID3TagFrame.h" />
-    <ClInclude Include="..\..\Shared\HLSInbandCCPayload.h" />
-    <ClInclude Include="..\..\Shared\HLSInitialBitrateSelectedEventArgs.h" />
-    <ClInclude Include="..\..\Shared\HLSMediaSource.h" />
-    <ClInclude Include="..\..\Shared\HLSPlaylist.h" />
-    <ClInclude Include="..\..\Shared\HLSPlaylistHandler.h" />
-    <ClInclude Include="..\..\Shared\HLSResourceRequestEventArgs.h" />
-    <ClInclude Include="..\..\Shared\HLSSegment.h" />
-    <ClInclude Include="..\..\Shared\HLSSegmentSwitchEventArgs.h" />
-    <ClInclude Include="..\..\Shared\HLSSlidingWindow.h" />
-    <ClInclude Include="..\..\Shared\HLSStreamSelectionChangedEventArgs.h" />
-    <ClInclude Include="..\..\Shared\HLSSubtitleLocator.h" />
-    <ClInclude Include="..\..\Shared\HLSVariantStream.h" />
-    <ClInclude Include="..\..\Shared\ID3TagParser.h" />
-    <ClInclude Include="..\..\Shared\Interfaces.h" />
-    <ClInclude Include="..\..\Shared\MediaSegment.h" />
-    <ClInclude Include="..\..\Shared\MFAudioStream.h" />
-    <ClInclude Include="..\..\Shared\MFStreamCommonImpl.h" />
-    <ClInclude Include="..\..\Shared\MFVideoStream.h" />
-    <ClInclude Include="..\..\Shared\MP3HeaderParser.h" />
-    <ClInclude Include="..\..\Shared\PATSection.h" />
-    <ClInclude Include="..\..\Shared\PESPacket.h" />
-    <ClInclude Include="..\..\Shared\Playlist.h" />
-    <ClInclude Include="..\..\Shared\PlaylistHelpers.h" />
-    <ClInclude Include="..\..\Shared\PlaylistOM.h" />
-    <ClInclude Include="..\..\Shared\PMTSection.h" />
-    <ClInclude Include="..\..\Shared\Rendition.h" />
-    <ClInclude Include="..\..\Shared\SampleData.h" />
-    <ClInclude Include="..\..\Shared\StopWatch.h" />
-    <ClInclude Include="..\..\Shared\StreamInfo.h" />
-    <ClInclude Include="..\..\Shared\TaskRegistry.h" />
-    <ClInclude Include="..\..\Shared\Timestamp.h" />
-    <ClInclude Include="..\..\Shared\TransportPacket.h" />
-    <ClInclude Include="..\..\Shared\TransportStreamParser.h" />
-    <ClInclude Include="..\..\Shared\TSConstants.h" />
-    <ClInclude Include="..\..\Shared\VariableRate.h" />
-    <ClInclude Include="pch.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5d1b2ca9-c3ff-4997-b91d-2b143c250042}</ProjectGuid>
+    <ProjectGuid>{6e57174d-7be0-4722-96f6-256fd57f5bf4}</ProjectGuid>
     <Keyword>WindowsRuntimeComponent</Keyword>
     <ProjectName>Microsoft.HLSClient</ProjectName>
     <RootNamespace>Microsoft_HLSClient</RootNamespace>
@@ -129,7 +35,9 @@
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <AppContainerApplication>true</AppContainerApplication>
     <ApplicationType>Windows Store</ApplicationType>
-    <ApplicationTypeRevision>8.2</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -223,7 +131,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
       <AdditionalUsingDirectories>$(WindowsSDK_WindowsMetadata);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
@@ -232,7 +140,6 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>runtimeobject.lib;%(AdditionalDependencies);mf.lib;mfplat.lib;mfuuid.lib</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <WindowsMetadataFile>$(OutDir)$(ProjectName).winmd</WindowsMetadataFile>
     </Link>
@@ -249,7 +156,6 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>runtimeobject.lib;%(AdditionalDependencies);mf.lib;mfplat.lib;mfuuid.lib</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <WindowsMetadataFile>$(OutDir)$(ProjectName).winmd</WindowsMetadataFile>
     </Link>
@@ -257,7 +163,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
       <AdditionalUsingDirectories>$(WindowsSDK_WindowsMetadata);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
@@ -266,7 +172,6 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>runtimeobject.lib;%(AdditionalDependencies);mf.lib;mfplat.lib;mfuuid.lib</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <WindowsMetadataFile>$(OutDir)$(ProjectName).winmd</WindowsMetadataFile>
     </Link>
@@ -283,7 +188,6 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>runtimeobject.lib;%(AdditionalDependencies);mf.lib;mfplat.lib;mfuuid.lib</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <WindowsMetadataFile>$(OutDir)$(ProjectName).winmd</WindowsMetadataFile>
     </Link>
@@ -291,7 +195,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
       <AdditionalUsingDirectories>$(WindowsSDK_WindowsMetadata);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
@@ -300,7 +204,6 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>runtimeobject.lib;%(AdditionalDependencies);mf.lib;mfplat.lib;mfuuid.lib</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <WindowsMetadataFile>$(OutDir)$(ProjectName).winmd</WindowsMetadataFile>
     </Link>
@@ -317,11 +220,111 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>runtimeobject.lib;%(AdditionalDependencies);mf.lib;mfplat.lib;mfuuid.lib</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <WindowsMetadataFile>$(OutDir)$(ProjectName).winmd</WindowsMetadataFile>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Shared\AdaptationField.h" />
+    <ClInclude Include="..\..\Shared\AdaptiveHeuristics.h" />
+    <ClInclude Include="..\..\Shared\AESCrypto.h" />
+    <ClInclude Include="..\..\Shared\AVCParser.h" />
+    <ClInclude Include="..\..\Shared\BitOp.h" />
+    <ClInclude Include="..\..\Shared\Configuration.h" />
+    <ClInclude Include="..\..\Shared\ContentDownloader.h" />
+    <ClInclude Include="..\..\Shared\ContentDownloadRegistry.h" />
+    <ClInclude Include="..\..\Shared\Cookie.h" />
+    <ClInclude Include="..\..\Shared\EncryptionKey.h" />
+    <ClInclude Include="..\..\Shared\FileLogger.h" />
+    <ClInclude Include="..\..\Shared\HLSAlternateRendition.h" />
+    <ClInclude Include="..\..\Shared\HLSBitrateSwitchEventArgs.h" />
+    <ClInclude Include="..\..\Shared\HLSController.h" />
+    <ClInclude Include="..\..\Shared\HLSControllerFactory.h" />
+    <ClInclude Include="..\..\Shared\HLSDummyByteStream.h" />
+    <ClInclude Include="..\..\Shared\HLSHttpHeaderEntry.h" />
+    <ClInclude Include="..\..\Shared\HLSID3MetadataPayload.h" />
+    <ClInclude Include="..\..\Shared\HLSID3MetadataStream.h" />
+    <ClInclude Include="..\..\Shared\HLSID3TagFrame.h" />
+    <ClInclude Include="..\..\Shared\HLSInbandCCPayload.h" />
+    <ClInclude Include="..\..\Shared\HLSInitialBitrateSelectedEventArgs.h" />
+    <ClInclude Include="..\..\Shared\HLSMediaSource.h" />
+    <ClInclude Include="..\..\Shared\HLSPlaylist.h" />
+    <ClInclude Include="..\..\Shared\HLSPlaylistHandler.h" />
+    <ClInclude Include="..\..\Shared\HLSResourceRequestEventArgs.h" />
+    <ClInclude Include="..\..\Shared\HLSSegment.h" />
+    <ClInclude Include="..\..\Shared\HLSSegmentSwitchEventArgs.h" />
+    <ClInclude Include="..\..\Shared\HLSSlidingWindow.h" />
+    <ClInclude Include="..\..\Shared\HLSStreamSelectionChangedEventArgs.h" />
+    <ClInclude Include="..\..\Shared\HLSSubtitleLocator.h" />
+    <ClInclude Include="..\..\Shared\HLSVariantStream.h" />
+    <ClInclude Include="..\..\Shared\ID3TagParser.h" />
+    <ClInclude Include="..\..\Shared\Interfaces.h" />
+    <ClInclude Include="..\..\Shared\MediaSegment.h" />
+    <ClInclude Include="..\..\Shared\MFAudioStream.h" />
+    <ClInclude Include="..\..\Shared\MFStreamCommonImpl.h" />
+    <ClInclude Include="..\..\Shared\MFVideoStream.h" />
+    <ClInclude Include="..\..\Shared\MP3HeaderParser.h" />
+    <ClInclude Include="..\..\Shared\PATSection.h" />
+    <ClInclude Include="..\..\Shared\PESPacket.h" />
+    <ClInclude Include="..\..\Shared\Playlist.h" />
+    <ClInclude Include="..\..\Shared\PlaylistHelpers.h" />
+    <ClInclude Include="..\..\Shared\PlaylistOM.h" />
+    <ClInclude Include="..\..\Shared\PMTSection.h" />
+    <ClInclude Include="..\..\Shared\Rendition.h" />
+    <ClInclude Include="..\..\Shared\SampleData.h" />
+    <ClInclude Include="..\..\Shared\StopWatch.h" />
+    <ClInclude Include="..\..\Shared\StreamInfo.h" />
+    <ClInclude Include="..\..\Shared\TaskRegistry.h" />
+    <ClInclude Include="..\..\Shared\Timestamp.h" />
+    <ClInclude Include="..\..\Shared\TransportPacket.h" />
+    <ClInclude Include="..\..\Shared\TransportStreamParser.h" />
+    <ClInclude Include="..\..\Shared\TSConstants.h" />
+    <ClInclude Include="..\..\Shared\VariableRate.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Shared\AdaptationField.cpp" />
+    <ClCompile Include="..\..\Shared\AdaptiveHeuristics.cpp" />
+    <ClCompile Include="..\..\Shared\AESCrypto.cpp" />
+    <ClCompile Include="..\..\Shared\AVCParser.cpp" />
+    <ClCompile Include="..\..\Shared\Configuration.cpp" />
+    <ClCompile Include="..\..\Shared\ContentDownloader.cpp" />
+    <ClCompile Include="..\..\Shared\ContentDownloadRegistry.cpp" />
+    <ClCompile Include="..\..\Shared\EncryptionKey.cpp" />
+    <ClCompile Include="..\..\Shared\FileLogger.cpp" />
+    <ClCompile Include="..\..\Shared\HLSAlternateRendition.cpp" />
+    <ClCompile Include="..\..\Shared\HLSController.cpp" />
+    <ClCompile Include="..\..\Shared\HLSControllerFactory.cpp" />
+    <ClCompile Include="..\..\Shared\HLSID3MetadataPayload.cpp" />
+    <ClCompile Include="..\..\Shared\HLSMediaSource.cpp" />
+    <ClCompile Include="..\..\Shared\HLSPlaylist.cpp" />
+    <ClCompile Include="..\..\Shared\HLSPlaylistHandler.cpp" />
+    <ClCompile Include="..\..\Shared\HLSSegment.cpp" />
+    <ClCompile Include="..\..\Shared\HLSVariantStream.cpp" />
+    <ClCompile Include="..\..\Shared\MediaSegment.cpp" />
+    <ClCompile Include="..\..\Shared\MFAudioStream.cpp" />
+    <ClCompile Include="..\..\Shared\MFStreamCommonImpl.cpp" />
+    <ClCompile Include="..\..\Shared\MFVideoStream.cpp" />
+    <ClCompile Include="..\..\Shared\MP3HeaderParser.cpp" />
+    <ClCompile Include="..\..\Shared\PATSection.cpp" />
+    <ClCompile Include="..\..\Shared\PESPacket.cpp" />
+    <ClCompile Include="..\..\Shared\Playlist.cpp" />
+    <ClCompile Include="..\..\Shared\PlaylistHelpers.cpp" />
+    <ClCompile Include="..\..\Shared\PMTSection.cpp" />
+    <ClCompile Include="..\..\Shared\Rendition.cpp" />
+    <ClCompile Include="..\..\Shared\StreamInfo.cpp" />
+    <ClCompile Include="..\..\Shared\Timestamp.cpp" />
+    <ClCompile Include="..\..\Shared\TransportPacket.cpp" />
+    <ClCompile Include="..\..\Shared\TransportStreamParser.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

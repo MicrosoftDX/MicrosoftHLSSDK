@@ -2,41 +2,41 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Resources">
-      <UniqueIdentifier>84a8a716-d438-40b4-ab72-cdfeb8e9a68a</UniqueIdentifier>
+      <UniqueIdentifier>c289be83-e707-437f-a200-6161278f1980</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="ABI">
-      <UniqueIdentifier>{867e2a91-03cb-4cf3-b0d9-bee4d5cede02}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="AVCParser">
-      <UniqueIdentifier>{ce750a50-4178-4450-99f9-c3749f39e7de}</UniqueIdentifier>
+      <UniqueIdentifier>{205f2c65-0a8d-4662-8509-6e36bee61d26}</UniqueIdentifier>
     </Filter>
     <Filter Include="Adaptive">
-      <UniqueIdentifier>{7ee0485a-6c0d-49c3-a721-bf0b5b7e3221}</UniqueIdentifier>
+      <UniqueIdentifier>{29c2b1aa-1d97-4318-838a-7c7af8d2c0e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AVCParser">
+      <UniqueIdentifier>{70b3ced9-bfcd-4adb-b093-647fcd724d95}</UniqueIdentifier>
     </Filter>
     <Filter Include="Configuration">
-      <UniqueIdentifier>{8dcdeeec-7bf1-452c-b33e-b7b801137ad9}</UniqueIdentifier>
+      <UniqueIdentifier>{32a74f1e-a5f4-4bab-a527-1547ce7287de}</UniqueIdentifier>
     </Filter>
     <Filter Include="Crypto">
-      <UniqueIdentifier>{5d4911cf-96fe-41f1-b5c3-4af7bf36f942}</UniqueIdentifier>
+      <UniqueIdentifier>{9be7e192-ec1c-4b2b-b4c1-3e2c2537da2a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Downloader">
-      <UniqueIdentifier>{3e2d691d-e6a2-491c-899b-ac48c7fdd618}</UniqueIdentifier>
+      <UniqueIdentifier>{3d8ac48e-3f5c-426d-95da-497940031415}</UniqueIdentifier>
     </Filter>
     <Filter Include="MFTypes">
-      <UniqueIdentifier>{4a8d4e56-f909-4b34-847c-73b5f86ed33c}</UniqueIdentifier>
+      <UniqueIdentifier>{8cd4c6a5-4947-4a1f-9592-a4917ade4583}</UniqueIdentifier>
     </Filter>
     <Filter Include="MP3HeaderParser">
-      <UniqueIdentifier>{e40ce932-cd47-411d-82e4-1f1edfdd8aa3}</UniqueIdentifier>
+      <UniqueIdentifier>{211b659e-9b3b-4c23-b809-2e6a2609a63e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Playlist Object Model">
-      <UniqueIdentifier>{d3cc6430-842b-4f4f-8433-3f2607e32b83}</UniqueIdentifier>
+      <UniqueIdentifier>{1af27c09-e56f-427b-bc9e-434c3c2cd804}</UniqueIdentifier>
     </Filter>
     <Filter Include="Transport Stream Object Model">
-      <UniqueIdentifier>{f08bb1f6-e27c-4834-9203-abf143a7551c}</UniqueIdentifier>
+      <UniqueIdentifier>{3de037a9-be55-4ed1-a498-1dbd5929a6f3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Utilities">
-      <UniqueIdentifier>{371a6487-a7d7-49a1-9474-22766c855c41}</UniqueIdentifier>
+      <UniqueIdentifier>{89ecbcb7-f9a3-486a-9d82-9177ac746c6f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -62,6 +62,24 @@
     <ClCompile Include="..\..\Shared\HLSVariantStream.cpp">
       <Filter>ABI</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Shared\AdaptiveHeuristics.cpp">
+      <Filter>Adaptive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Shared\AVCParser.cpp">
+      <Filter>AVCParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Shared\Configuration.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Shared\AESCrypto.cpp">
+      <Filter>Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Shared\ContentDownloader.cpp">
+      <Filter>Downloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Shared\ContentDownloadRegistry.cpp">
+      <Filter>Downloader</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Shared\HLSMediaSource.cpp">
       <Filter>MFTypes</Filter>
     </ClCompile>
@@ -77,26 +95,11 @@
     <ClCompile Include="..\..\Shared\MFVideoStream.cpp">
       <Filter>MFTypes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Shared\ContentDownloader.cpp">
-      <Filter>Downloader</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Shared\ContentDownloadRegistry.cpp">
-      <Filter>Downloader</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Shared\AdaptiveHeuristics.cpp">
-      <Filter>Adaptive</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Shared\AVCParser.cpp">
-      <Filter>AVCParser</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Shared\Configuration.cpp">
-      <Filter>Configuration</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Shared\AESCrypto.cpp">
-      <Filter>Crypto</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Shared\MP3HeaderParser.cpp">
       <Filter>MP3HeaderParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Shared\FileLogger.cpp">
+      <Filter>Utilities</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Shared\EncryptionKey.cpp">
       <Filter>Playlist Object Model</Filter>
@@ -136,9 +139,6 @@
     </ClCompile>
     <ClCompile Include="..\..\Shared\TransportStreamParser.cpp">
       <Filter>Transport Stream Object Model</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Shared\FileLogger.cpp">
-      <Filter>Utilities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -200,6 +200,24 @@
     <ClInclude Include="..\..\Shared\Interfaces.h">
       <Filter>ABI</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Shared\AdaptiveHeuristics.h">
+      <Filter>Adaptive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shared\AVCParser.h">
+      <Filter>AVCParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shared\Configuration.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shared\AESCrypto.h">
+      <Filter>Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shared\ContentDownloader.h">
+      <Filter>Downloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shared\ContentDownloadRegistry.h">
+      <Filter>Downloader</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Shared\HLSDummyByteStream.h">
       <Filter>MFTypes</Filter>
     </ClInclude>
@@ -221,26 +239,23 @@
     <ClInclude Include="..\..\Shared\VariableRate.h">
       <Filter>MFTypes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Shared\ContentDownloader.h">
-      <Filter>Downloader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Shared\ContentDownloadRegistry.h">
-      <Filter>Downloader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Shared\AdaptiveHeuristics.h">
-      <Filter>Adaptive</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Shared\AVCParser.h">
-      <Filter>AVCParser</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Shared\Configuration.h">
-      <Filter>Configuration</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Shared\AESCrypto.h">
-      <Filter>Crypto</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Shared\MP3HeaderParser.h">
       <Filter>MP3HeaderParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shared\BitOp.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shared\FileLogger.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shared\ID3TagParser.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shared\StopWatch.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shared\TaskRegistry.h">
+      <Filter>Utilities</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Shared\Cookie.h">
       <Filter>Playlist Object Model</Filter>
@@ -292,21 +307,6 @@
     </ClInclude>
     <ClInclude Include="..\..\Shared\TSConstants.h">
       <Filter>Transport Stream Object Model</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Shared\BitOp.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Shared\FileLogger.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Shared\ID3TagParser.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Shared\StopWatch.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Shared\TaskRegistry.h">
-      <Filter>Utilities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

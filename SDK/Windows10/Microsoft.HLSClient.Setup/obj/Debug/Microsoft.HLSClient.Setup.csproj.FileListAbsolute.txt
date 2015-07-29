@@ -6,11 +6,3 @@ F:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup
 F:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\obj\Debug\Microsoft.HLSClient.Setup.pdb
 F:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\obj\Debug\extension.vsixmanifest
 F:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\bin\Debug\PreviewImage.ico
-D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\bin\Debug\License.txt
-D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\bin\Debug\PreviewImage.ico
-D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\bin\Debug\SDKManifest.xml
-D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\bin\Debug\Microsoft.HLSClient.Setup.vsix
-D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\bin\Debug\extension.vsixmanifest
-D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\obj\Debug\Microsoft.HLSClient.Setup.dll
-D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\obj\Debug\Microsoft.HLSClient.Setup.pdb
-D:\Workarea\Repos\GitHub\MicrosoftHLSSDK\SDK\Windows10\Microsoft.HLSClient.Setup\obj\Debug\extension.vsixmanifest
