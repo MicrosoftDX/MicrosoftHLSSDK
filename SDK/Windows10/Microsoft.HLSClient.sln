@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.HLSClient.Setup",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{F14F6CA6-8473-40EC-B6F7-976C60B43960}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "Samples\TestApp\TestApp.csproj", "{CCCB4565-7051-4646-9DAF-9079A781B2CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,26 @@ Global
 		{58D1E247-E45A-49EC-86D4-735641265746}.Release|x64.Build.0 = Release|Any CPU
 		{58D1E247-E45A-49EC-86D4-735641265746}.Release|x86.ActiveCfg = Release|Any CPU
 		{58D1E247-E45A-49EC-86D4-735641265746}.Release|x86.Build.0 = Release|Any CPU
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Debug|ARM.ActiveCfg = Debug|ARM
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Debug|ARM.Build.0 = Debug|ARM
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Debug|ARM.Deploy.0 = Debug|ARM
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Debug|x64.ActiveCfg = Debug|x64
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Debug|x64.Build.0 = Debug|x64
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Debug|x64.Deploy.0 = Debug|x64
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Debug|x86.ActiveCfg = Debug|x86
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Debug|x86.Build.0 = Debug|x86
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Debug|x86.Deploy.0 = Debug|x86
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Release|Any CPU.ActiveCfg = Release|x86
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Release|ARM.ActiveCfg = Release|ARM
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Release|ARM.Build.0 = Release|ARM
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Release|ARM.Deploy.0 = Release|ARM
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Release|x64.ActiveCfg = Release|x64
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Release|x64.Build.0 = Release|x64
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Release|x64.Deploy.0 = Release|x64
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Release|x86.ActiveCfg = Release|x86
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Release|x86.Build.0 = Release|x86
+		{CCCB4565-7051-4646-9DAF-9079A781B2CB}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
