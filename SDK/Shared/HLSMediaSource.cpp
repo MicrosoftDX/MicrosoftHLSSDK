@@ -2183,11 +2183,11 @@ HRESULT CHLSMediaSource::StartLivePlaylistFromStoppedState(Playlist *pPlaylist, 
 
     if (cpVideoStream != nullptr && cpVideoStream->Selected())
     {
-      cpVideoStream->NotifyStreamUpdated();
+      NotifyStreamUpdated(cpVideoStream.Get());
     }
     if (cpAudioStream != nullptr && cpAudioStream->Selected())
     {
-      cpAudioStream->NotifyStreamUpdated();
+      NotifyStreamUpdated(cpAudioStream.Get());
     }
 
 
@@ -2744,11 +2744,11 @@ HRESULT CHLSMediaSource::StartLivePlaylistWithAltAudioFromStoppedState(Playlist 
 
     if (cpVideoStream != nullptr && cpVideoStream->Selected())
     {
-      cpVideoStream->NotifyStreamUpdated();
+      NotifyStreamUpdated(cpVideoStream.Get());
     }
     if (cpAudioStream != nullptr && cpAudioStream->Selected())
     {
-      cpAudioStream->NotifyStreamUpdated();
+      NotifyStreamUpdated(cpAudioStream.Get());
     }
 
 
