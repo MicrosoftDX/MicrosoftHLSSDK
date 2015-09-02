@@ -1,0 +1,115 @@
+﻿<Page
+    x:Class="HLSStreamMonitor.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HLSStreamMonitor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:mmppf="using:Microsoft.PlayerFramework"
+  xmlns:mmppfvtt="using:Microsoft.PlayerFramework.WebVTT"
+  xmlns:mmppfhls="using:Microsoft.PlayerFramework.Adaptive.HLS"
+  xmlns:mmppfhls608="using:Microsoft.PlayerFramework.CC608"
+  xmlns:cea608ccsettings="using:Microsoft.PlayerFramework.CC608.CaptionSettings" 
+  xmlns:vttccsettings="using:Microsoft.PlayerFramework.WebVTT.CaptionSettings"
+    mc:Ignorable="d">
+	<Page.Resources>
+		<Style x:Key="ToggleButtonStyleFullScreen" TargetType="ToggleButton">
+		 
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="ToggleButton">
+						<Grid>
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualState x:Name="Normal"/>
+									<VisualState x:Name="PointerOver">
+										<Storyboard>
+                      <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="img"/>
+                    </Storyboard>
+									</VisualState>
+                  <VisualState x:Name="Pressed"/> 
+                  <VisualState x:Name="Checked"/>  
+                  <VisualState x:Name="CheckedPointerOver">
+                    <Storyboard>
+                      <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="img"/>
+                    </Storyboard>
+                  </VisualState>
+                  <VisualState x:Name="CheckedPressed"/>  
+									<VisualState x:Name="Indeterminate"/>
+                  <VisualState x:Name="IndeterminatePointerOver"/>  
+                  <VisualState x:Name="IndeterminatePressed"/>  
+                  <VisualState x:Name="IndeterminateDisabled"/>  
+                </VisualStateGroup>
+								<VisualStateGroup x:Name="FocusStates">
+                  <VisualState x:Name="Focused"/>  
+                  <VisualState x:Name="Unfocused"/>
+									<VisualState x:Name="PointerFocused"/>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+              <Image Source="Assets/Full-Screen.png" Width="64" Height="64" x:Name="img" Opacity="0.35"/>
+            </Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</Page.Resources>
+
+  <Page.TopAppBar>
+    <AppBar Background="#FF898989" Margin="0,0,0,0">
+      <local:TopAppBarUI x:Name="ucTopAppBar"/>
+    </AppBar>
+  </Page.TopAppBar>
+
+
+  <Grid Background="Black" x:Name="LayoutRoot">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="6*"/>
+      <RowDefinition Height="3*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="10.62*"/>  
+      <ColumnDefinition Width="5.38*"/>
+    </Grid.ColumnDefinitions> 
+
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="0" Name="gridMediaDisplay">
+      <mmppf:MediaPlayer x:Name="mediaplayer" Background="DarkGray" AutoPlay="True" 
+                         SeekWhileScrubbing="True" IsCaptionSelectionVisible="True">
+        <mmppf:MediaPlayer.Plugins>
+          <mmppfhls:HLSPlugin x:Name="hlsplugin" ClosedCaptionType="CC608Instream"/>
+          <!--<mmppfvtt:WebVTTPlugin />-->
+          <mmppfhls608:CC608Plugin/> 
+          <!--<cea608ccsettings:CC608CaptionSettingsPlugin/>
+          <vttccsettings:WebVTTCaptionSettingsPlugin/>-->
+          <mmppf:PlaylistPlugin AutoAdvance="True" />
+        </mmppf:MediaPlayer.Plugins>
+      </mmppf:MediaPlayer>
+      <Grid x:Name="gridFullScreenCommand" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,30" Background="Transparent">
+        <ToggleButton x:Name="btnToggleFullScreen" Style="{StaticResource ToggleButtonStyleFullScreen}" Checked="btnToggleFullScreen_Checked" Unchecked="btnToggleFullScreen_Unchecked" IsChecked="False"/>
+      </Grid>
+      <Grid x:Name="gridAudioOnly" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed">
+        <Image Source="assets/audioonly.png" Width="128" Height="128" />
+      </Grid>
+    </Grid>
+
+    <Grid x:Name="gridHLSData" Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="5*"/>
+        <ColumnDefinition Width="5*"/>
+      </Grid.ColumnDefinitions>
+      <local:MetadataUI VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="ucMetadataUI" Margin="5,5,5,0" Grid.Column="0"/>
+      <local:UnprocessedTagsUI VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="ucUnprocessedTagsUI" Margin="5,5,5,0" Grid.Column="1"/>
+    </Grid>
+    <Grid Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Background="Black" x:Name="gridControlPanel">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="borderPlaybackStatus">
+        <local:PlaybackStatusUI x:Name="ucPlaybackStatus" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+      </Border>
+      <Grid x:Name="gridHLSSettings" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightBlue">
+        <local:HLSSettingsUI HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,15,5,15" x:Name="ucHLSSettings"/>
+      </Grid>
+    </Grid> 
+  </Grid>
+</Page>

@@ -45,7 +45,7 @@ void HLSController::RaisePrepareResourceRequest(ResourceType restype,
   if (args != nullptr && IsValid && IsPrepareResourceRequestSubscribed())
   {
     task<void> t(args->_tceSubmitted);
-    PrepareResourceRequest(this, args);
+    _prepareResourceRequest(this, args);
     t.wait();
     szUrl = args->_resourceUrl;
     headers = args->_headers;
@@ -67,7 +67,7 @@ void HLSController::RaiseInitialBitrateSelected()
   {
     HLSInitialBitrateSelectedEventArgs^ args = ref new HLSInitialBitrateSelectedEventArgs();
     task<void> t(args->_tceSubmitted);
-    InitialBitrateSelected(this, args);
+    _initialBitrateSelected(this, args);
     t.wait(); 
   }
 }

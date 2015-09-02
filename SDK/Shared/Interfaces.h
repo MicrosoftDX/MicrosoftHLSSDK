@@ -278,43 +278,43 @@ namespace Microsoft {
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSBitrateSwitchEventArgs^>^ handler);
         void remove(Windows::Foundation::EventRegistrationToken token);
-        void raise(IHLSPlaylist^ sender, IHLSBitrateSwitchEventArgs^ args);
+        //void raise(IHLSPlaylist^ sender, IHLSBitrateSwitchEventArgs^ args);
       };
       event Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSBitrateSwitchEventArgs^>^ BitrateSwitchCancelled
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSBitrateSwitchEventArgs^>^ handler);
         void remove(Windows::Foundation::EventRegistrationToken token);
-        void raise(IHLSPlaylist^ sender, IHLSBitrateSwitchEventArgs^ args);
+        //void raise(IHLSPlaylist^ sender, IHLSBitrateSwitchEventArgs^ args);
       };
       event Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSBitrateSwitchEventArgs^>^ BitrateSwitchCompleted
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSBitrateSwitchEventArgs^>^ handler);
         void remove(Windows::Foundation::EventRegistrationToken token);
-        void raise(IHLSPlaylist^ sender, IHLSBitrateSwitchEventArgs^ args);
+        //void raise(IHLSPlaylist^ sender, IHLSBitrateSwitchEventArgs^ args);
       };
       event Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSStreamSelectionChangedEventArgs^>^ StreamSelectionChanged
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSStreamSelectionChangedEventArgs^>^ handler);
         void remove(Windows::Foundation::EventRegistrationToken token);
-        void raise(IHLSPlaylist^ sender, IHLSStreamSelectionChangedEventArgs^ args);
+        //void raise(IHLSPlaylist^ sender, IHLSStreamSelectionChangedEventArgs^ args);
       };
       event Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSSegmentSwitchEventArgs^>^ SegmentSwitched
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSSegmentSwitchEventArgs^>^ handler);
         void remove(Windows::Foundation::EventRegistrationToken token);
-        void raise(IHLSPlaylist^ sender, IHLSSegmentSwitchEventArgs^ args);
+        //void raise(IHLSPlaylist^ sender, IHLSSegmentSwitchEventArgs^ args);
       };
       event Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSSegment^>^ SegmentDataLoaded
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSSegment^>^ handler);
         void remove(Windows::Foundation::EventRegistrationToken token);
-        void raise(IHLSPlaylist^ sender, IHLSSegment^ args);
+        //void raise(IHLSPlaylist^ sender, IHLSSegment^ args);
       };
       event Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSSlidingWindow^>^ SlidingWindowChanged
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSSlidingWindow^>^ handler);
         void remove(Windows::Foundation::EventRegistrationToken token);
-        void raise(IHLSPlaylist^ sender, IHLSSlidingWindow^ args);
+        //void raise(IHLSPlaylist^ sender, IHLSSlidingWindow^ args);
       };
     };
  
@@ -346,14 +346,14 @@ namespace Microsoft {
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSController^, IHLSResourceRequestEventArgs^>^ handler);
         void remove(Windows::Foundation::EventRegistrationToken token);
-        void raise(IHLSController^ sender, IHLSResourceRequestEventArgs^ args);
+        //void raise(IHLSController^ sender, IHLSResourceRequestEventArgs^ args);
       };
     
       event Windows::Foundation::TypedEventHandler<IHLSController^, IHLSInitialBitrateSelectedEventArgs^>^ InitialBitrateSelected
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSController^, IHLSInitialBitrateSelectedEventArgs^>^ handler);
         void remove(Windows::Foundation::EventRegistrationToken token);
-        void raise(IHLSController^ sender, IHLSInitialBitrateSelectedEventArgs^ args);
+        //void raise(IHLSController^ sender, IHLSInitialBitrateSelectedEventArgs^ args);
       };
       bool TryLock();
       void Lock();
@@ -368,13 +368,13 @@ namespace Microsoft {
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSControllerFactory^, IHLSResourceRequestEventArgs^>^ handler);
         void remove(Windows::Foundation::EventRegistrationToken token);
-        void raise(IHLSControllerFactory^ sender, IHLSResourceRequestEventArgs^ args);
+        //void raise(IHLSControllerFactory^ sender, IHLSResourceRequestEventArgs^ args);
       };
       event Windows::Foundation::TypedEventHandler<IHLSControllerFactory^, IHLSController^>^ HLSControllerReady
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSControllerFactory^, IHLSController^>^ handler);
         void remove(Windows::Foundation::EventRegistrationToken token);
-        void raise(IHLSControllerFactory^ sender, IHLSController^ args);
+        //void raise(IHLSControllerFactory^ sender, IHLSController^ args);
       };
     };
 

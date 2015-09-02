@@ -87,10 +87,10 @@ namespace Microsoft {
           {
             _BitrateSwitchSuggested -= token;
           }
-          void raise(IHLSPlaylist^ sender, IHLSBitrateSwitchEventArgs^ args)
+        /*  void raise(IHLSPlaylist^ sender, IHLSBitrateSwitchEventArgs^ args)
           { 
             return _BitrateSwitchSuggested(sender, args);
-          }
+          }*/
         }
         virtual event Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSBitrateSwitchEventArgs^>^ BitrateSwitchCancelled
         {
@@ -102,10 +102,10 @@ namespace Microsoft {
           {
             _BitrateSwitchCancelled -= token;
           }
-          void raise(IHLSPlaylist^ sender, IHLSBitrateSwitchEventArgs^ args)
+         /* void raise(IHLSPlaylist^ sender, IHLSBitrateSwitchEventArgs^ args)
           {
             return _BitrateSwitchCancelled(sender, args);
-          }
+          }*/
         }
 
         virtual event Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSBitrateSwitchEventArgs^>^ BitrateSwitchCompleted
@@ -118,10 +118,10 @@ namespace Microsoft {
           {
             _BitrateSwitchCompleted -= token;
           }
-          void raise(IHLSPlaylist^ sender, IHLSBitrateSwitchEventArgs^ args)
+        /*  void raise(IHLSPlaylist^ sender, IHLSBitrateSwitchEventArgs^ args)
           {
             return _BitrateSwitchCompleted(sender, args);
-          }
+          }*/
         }
         virtual event Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSStreamSelectionChangedEventArgs^>^ StreamSelectionChanged
         {
@@ -133,10 +133,10 @@ namespace Microsoft {
           {
             _StreamSelectionChanged -= token;
           }
-          void raise(IHLSPlaylist^ sender, IHLSStreamSelectionChangedEventArgs^ args)
+       /*   void raise(IHLSPlaylist^ sender, IHLSStreamSelectionChangedEventArgs^ args)
           {
             return _StreamSelectionChanged(sender, args);
-          }
+          }*/
         }
         virtual event Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSSegmentSwitchEventArgs^>^ SegmentSwitched
         {
@@ -148,10 +148,10 @@ namespace Microsoft {
           {
             _SegmentSwitched -= token;
           }
-          void raise(IHLSPlaylist^ sender, IHLSSegmentSwitchEventArgs^ args)
+        /*  void raise(IHLSPlaylist^ sender, IHLSSegmentSwitchEventArgs^ args)
           {
             return _SegmentSwitched(sender, args);
-          }
+          }*/
         }
         virtual event Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSSegment^>^ SegmentDataLoaded
         {
@@ -163,10 +163,10 @@ namespace Microsoft {
           {
             _SegmentDataLoaded -= token;
           }
-          void raise(IHLSPlaylist^ sender, IHLSSegment^ args)
+        /*  void raise(IHLSPlaylist^ sender, IHLSSegment^ args)
           {
             return _SegmentDataLoaded(sender, args);
-          }
+          }*/
         }
         virtual event Windows::Foundation::TypedEventHandler<IHLSPlaylist^, IHLSSlidingWindow^>^ SlidingWindowChanged
         {
@@ -178,10 +178,10 @@ namespace Microsoft {
           {
             _SlidingWindowChanged -= token;
           }
-          void raise(IHLSPlaylist^ sender, IHLSSlidingWindow^ args)
+         /* void raise(IHLSPlaylist^ sender, IHLSSlidingWindow^ args)
           {
             return _SlidingWindowChanged(sender, args);
-          }
+          }*/
         }
 
 
