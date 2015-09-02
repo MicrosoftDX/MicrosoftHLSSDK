@@ -30,6 +30,18 @@ RawCaptionData::RawCaptionData(void) : _vector(ref new Platform::Collections::Ve
 {
 }
 
+RawCaptionData::RawCaptionData(unsigned long long ts, const Platform::Array<byte_t>^ bytes) : _vector(ref new Platform::Collections::Vector<RawCaptionDataSubset^>())
+{
+	if (bytes->Length == 0)
+	{
+		// no usable data here
+		return;
+	}
+
+	RawCaptionDataSubset^ s = ref new RawCaptionDataSubset(ts, bytes);
+	_vector->Append(s);
+}
+
 void RawCaptionData::AddByArray(unsigned long long ts, const Platform::Array<byte_t>^ bytes)
 {
   if (bytes->Length == 0)

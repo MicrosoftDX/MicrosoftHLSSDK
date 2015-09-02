@@ -37,6 +37,7 @@ public ref class RawCaptionData sealed
 {
 public:
   RawCaptionData(void);
+  RawCaptionData(unsigned long long ts, const Platform::Array<byte_t>^ bytes);
 
   void AddByArray(unsigned long long ts, const Platform::Array<byte_t>^ bytes);
 

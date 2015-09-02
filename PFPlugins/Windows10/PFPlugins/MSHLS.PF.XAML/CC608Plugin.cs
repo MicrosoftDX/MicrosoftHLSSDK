@@ -181,7 +181,14 @@ namespace Microsoft.PlayerFramework.CC608
         {
             if (data != null)
             {
-                await _controller.AddNewCaptionDataInUserDataEnvelopeAsync(data);
+                foreach(ulong key in data.Keys)
+                {
+                    var bytes = data[key];
+                    if(bytes != null)
+                    {
+                        await _controller.AddNewCaptionDataInUserDataEnvelopeAsync(new RawCaptionData(key, bytes.ToArray()));
+                    }
+                }
             }
         }
 

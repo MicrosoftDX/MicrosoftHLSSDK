@@ -43,9 +43,6 @@ public:
   Windows::Foundation::IAsyncAction^ AddNewCaptionDataAsync(RawCaptionData^ data);
   Windows::Foundation::IAsyncAction^ AddNewCaptionDataInUserDataEnvelopeAsync(RawCaptionData^ data);
 
-  [Windows::Foundation::Metadata::DefaultOverload]
-  Windows::Foundation::IAsyncAction^ AddNewCaptionDataInUserDataEnvelopeAsync(Windows::Foundation::Collections::IMap<unsigned long long, Windows::Foundation::Collections::IVector<byte>^>^ map);
-
   // Updates the model and checks if a render is required (runs async on background thread)
   Windows::Foundation::IAsyncOperation<bool>^ CaptionUpdateRequiredAsync(Windows::Foundation::TimeSpan currentPosition);
 
@@ -93,6 +90,9 @@ private:
   Core _core;
   std::mutex _mtx;
   Microsoft::CC608::CaptionOptions^ options;
+
+  [Windows::Foundation::Metadata::DefaultOverload]
+  Windows::Foundation::IAsyncAction^ AddNewCaptionDataInUserDataEnvelopeAsync(Windows::Foundation::Collections::IMap<unsigned long long, Windows::Foundation::Collections::IVector<byte>^>^ map);
 };
 
 }}

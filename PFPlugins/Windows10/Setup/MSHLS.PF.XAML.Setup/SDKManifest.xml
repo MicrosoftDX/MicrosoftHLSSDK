@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <FileList
-  Identity="Microsoft.PlayerFramework.Win10.XAML.HLS, Version=1.0"
-  DisplayName="Microsoft Player Framework for Windows 10 UWP HLS"
+  Identity="MSHLS.PF.XAML.Win10, Version=1.0"
+  DisplayName="MSHLS.PF.XAML.Win10"
   TargetPlatform="UAP"
   TargetPlatformMinVersion="10.0.10240.0"
   TargetPlatformVersion="10.0.10240.0"

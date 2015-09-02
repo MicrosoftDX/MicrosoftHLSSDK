@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
 	<Metadata>
-		<Identity Id="MSHLS.PF.UWP.Setup.99A0C51E-5EF9-485F-935B-0988930078F7" Version="1.2.0.1" Language="en-US" Publisher="Microsoft DX TED" />
+		<Identity Id="MSHLS.PF.UWP" Version="1.2.0.1" Language="en-US" Publisher="Microsoft DX TED" />
 		<DisplayName>Microsoft HLS Player Framework Plugins for UWP</DisplayName>
 		<Description xml:space="preserve">Microsoft HLS Player Framework Plugins for Windows 10 UWP</Description>
 		<License>License.rtf</License>
@@ -13,7 +13,7 @@
 	</Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-    <Dependency Version="[1.0,2.0)" Location="MSHLS.PF.XAML.Setup.vsix" DisplayName="Player Framework Win 10 XAML UWP - HLS" Id="Microsoft.PlayerFramework.Win10.XAML.HLS" />
-    <Dependency Version="[1.0,2.0)" Location="MSHLS.PF.WinJS.Setup.vsix" DisplayName="Player Framework Win 10 WinJS UWP - HLS" Id="Microsoft.PlayerFramework.Win10.WinJS.HLS" />
+    <Dependency Version="[1.0,2.0)" Location="MSHLS.PF.XAML.Setup.vsix" DisplayName="MSHLS.PF.XAML.Win10" Id="MSHLS.PF.XAML.Win10" />
+    <Dependency Version="[1.0,2.0)" Location="MSHLS.PF.WinJS.Setup.vsix" DisplayName="MSHLS.PF.WinJS.Win10" Id="MSHLS.PF.WinJS.Win10" />
   </Dependencies>
 </PackageManifest>
