@@ -62,6 +62,9 @@ namespace Microsoft {
       bool IsPrepareResourceRequestSubscribed() { 
         return _prepareresrequestsubscriptioncount > 0; 
       }
+
+       
+
       virtual event Windows::Foundation::TypedEventHandler<IHLSControllerFactory^, IHLSResourceRequestEventArgs^>^ PrepareResourceRequest
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSControllerFactory^, IHLSResourceRequestEventArgs^>^ handler)
@@ -74,11 +77,12 @@ namespace Microsoft {
           InterlockedDecrement(&_prepareresrequestsubscriptioncount);
           _prepareResourceRequest -= token;
         }
-        void raise(IHLSControllerFactory^ sender, IHLSResourceRequestEventArgs^ args)
+        /*void raise(IHLSControllerFactory^ sender, IHLSResourceRequestEventArgs^ args)
         { 
           return _prepareResourceRequest(sender, args);
-        }
+        }*/
       }
+
       virtual event Windows::Foundation::TypedEventHandler<IHLSControllerFactory^, IHLSController^>^ HLSControllerReady
       {
         Windows::Foundation::EventRegistrationToken add(Windows::Foundation::TypedEventHandler<IHLSControllerFactory^, IHLSController^>^ handler)
@@ -89,10 +93,10 @@ namespace Microsoft {
         {
           _controllerReady -= token;
         }
-        void raise(IHLSControllerFactory^ sender, IHLSController^ args)
+      /*  void raise(IHLSControllerFactory^ sender, IHLSController^ args)
         {
           return _controllerReady(sender, args);
-        }
+        }*/
       }
 
     };

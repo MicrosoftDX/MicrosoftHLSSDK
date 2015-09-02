@@ -41,7 +41,7 @@ void Microsoft::HLSClient::HLSControllerFactory::RaisePrepareResourceRequest(Res
   if (args != nullptr && IsPrepareResourceRequestSubscribed())
   {
     task<void> t(args->_tceSubmitted); 
-    PrepareResourceRequest(this, args);
+    _prepareResourceRequest(this, args);
     t.wait();
     szUrl = args->_resourceUrl;
     headers = args->_headers;
@@ -51,5 +51,5 @@ void Microsoft::HLSClient::HLSControllerFactory::RaisePrepareResourceRequest(Res
 }
 void Microsoft::HLSClient::HLSControllerFactory::RaiseControllerReady(IHLSController^ pController)
 {
-  HLSControllerReady(this, pController);
+  _controllerReady(this, pController);
 }

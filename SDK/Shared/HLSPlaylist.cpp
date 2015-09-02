@@ -431,7 +431,7 @@ void HLSPlaylist::RaiseBitrateSwitchSuggested(unsigned int From, unsigned int To
   try
   {
     HLSBitrateSwitchEventArgs^ args = ref new HLSBitrateSwitchEventArgs(From, To, LastMeasured, TrackType::BOTH);
-    BitrateSwitchSuggested(this, args);
+    _BitrateSwitchSuggested(this, args);
     Cancel = args->Cancel;
   }
   catch (...)
@@ -446,7 +446,7 @@ void HLSPlaylist::RaiseBitrateSwitchCompleted(ContentType type, unsigned int Fro
   if (_bitratekey != nullptr) return;
   try
   {
-    BitrateSwitchCompleted(this, ref new HLSBitrateSwitchEventArgs(From, To, To, type == ContentType::AUDIO ? TrackType::AUDIO : TrackType::VIDEO));
+    _BitrateSwitchCompleted(this, ref new HLSBitrateSwitchEventArgs(From, To, To, type == ContentType::AUDIO ? TrackType::AUDIO : TrackType::VIDEO));
   }
   catch (...)
   {
@@ -460,7 +460,7 @@ void HLSPlaylist::RaiseBitrateSwitchCancelled(unsigned int From, unsigned int To
   if (_bitratekey != nullptr) return;
   try
   {
-    BitrateSwitchCancelled(this, ref new HLSBitrateSwitchEventArgs(From, To, To, TrackType::BOTH));
+    _BitrateSwitchCancelled(this, ref new HLSBitrateSwitchEventArgs(From, To, To, TrackType::BOTH));
   }
   catch (...)
   {
@@ -474,7 +474,7 @@ void HLSPlaylist::RaiseStreamSelectionChanged(TrackType from, TrackType to)
   if (_bitratekey != nullptr) return;
   try
   {
-    StreamSelectionChanged(this, ref new HLSStreamSelectionChangedEventArgs(from, to));
+    _StreamSelectionChanged(this, ref new HLSStreamSelectionChangedEventArgs(from, to));
   }
   catch (...)
   {
@@ -502,7 +502,7 @@ void HLSPlaylist::RaiseSegmentSwitched(Playlist *from, Playlist *to, unsigned in
       from != nullptr && foundFromSeg != nullptr ? ref new HLSSegment(_controller, from->pParentStream == nullptr ? 0 : from->pParentStream->Bandwidth, foundFromSeg) : nullptr,
       to != nullptr ? ref new HLSSegment(_controller, to->pParentStream == nullptr ? 0 : to->pParentStream->Bandwidth, foundToSeg) : nullptr);
 
-    SegmentSwitched(this, args);
+    _SegmentSwitched(this, args);
   }
   catch (...)
   {
@@ -522,7 +522,7 @@ void HLSPlaylist::RaiseSegmentDataLoaded(Playlist *from, unsigned int forseq)
     else
       foundFromSeg = HLSSegment::FindMatch(_controller, from->pParentStream == nullptr ? 0 : from->pParentStream->Bandwidth, forseq);
     if (foundFromSeg != nullptr)
-      SegmentDataLoaded(this, ref new HLSSegment(_controller, from->pParentStream == nullptr ? 0 : from->pParentStream->Bandwidth, foundFromSeg));
+      _SegmentDataLoaded(this, ref new HLSSegment(_controller, from->pParentStream == nullptr ? 0 : from->pParentStream->Bandwidth, foundFromSeg));
   }
   catch (...)
   {
@@ -540,7 +540,7 @@ void HLSPlaylist::RaiseSlidingWindowChanged(Playlist *from)
     auto _start = from->GetSlidingWindowStart();
     auto _end = from->GetSlidingWindowEnd();
     auto _livepos = from->FindApproximateLivePosition();
-    SlidingWindowChanged(this, (_start == nullptr || _end == nullptr || _livepos == nullptr) ? nullptr : ref new HLSSlidingWindow(_start->ValueInTicks, _end->ValueInTicks, _livepos->ValueInTicks));
+    _SlidingWindowChanged(this, (_start == nullptr || _end == nullptr || _livepos == nullptr) ? nullptr : ref new HLSSlidingWindow(_start->ValueInTicks, _end->ValueInTicks, _livepos->ValueInTicks));
   }
   catch (...)
   {

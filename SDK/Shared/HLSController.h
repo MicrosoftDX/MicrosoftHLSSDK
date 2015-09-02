@@ -95,10 +95,10 @@ namespace Microsoft {
             InterlockedDecrement(&_prepareresrequestsubscriptioncount);
             _prepareResourceRequest -= token;
           }
-          void raise(IHLSController^ sender, IHLSResourceRequestEventArgs^ args)
+        /*  void raise(IHLSController^ sender, IHLSResourceRequestEventArgs^ args)
           {
             return _prepareResourceRequest(sender, args);
-          }
+          }*/
         }
 
   
@@ -115,10 +115,10 @@ namespace Microsoft {
             InterlockedDecrement(&_initialbitrateselectedsubscriptioncount);
             _initialBitrateSelected -= token;
           }
-          void raise(IHLSController^ sender, IHLSInitialBitrateSelectedEventArgs^ args)
+         /* void raise(IHLSController^ sender, IHLSInitialBitrateSelectedEventArgs^ args)
           {
             return _initialBitrateSelected(sender, args);
-          }
+          }*/
         }
  
 
