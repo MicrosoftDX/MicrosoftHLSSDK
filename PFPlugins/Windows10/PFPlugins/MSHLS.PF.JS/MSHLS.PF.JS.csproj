@@ -119,9 +119,6 @@
     <Content Include="js\HLSPlugin.js" />
   </ItemGroup>
   <ItemGroup>
-    <SDKReference Include="Microsoft HLS SDK for Windows, Version=1.2.1.0" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\Microsoft.CC608\Microsoft.CC608.vcxproj">
       <Project>{7739e46e-9bf4-4908-9583-3b3f3d3638d5}</Project>
       <Name>Microsoft.CC608</Name>
@@ -129,6 +126,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft HLS SDK for Windows, Version=1.2.1.0">
+      <Name>Microsoft HLS SDK for Windows</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.VCLibs, Version=14.0">
+      <Name>Visual C++ 2015 Runtime for Universal Windows Platform Apps</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PermanentFavorites> 
+  <Favorite Name="Apple - Advanced Test Stream" Url="https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8"/>
+  <Favorite Name="Apple - Simple Test Stream" Url="https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"/>
+  <Favorite Name="Akamai VOD 1" Url="http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,.mp4.csmil/master.m3u8"
+  />
+  <Favorite Name="Big Buck Bunny" Url=
+    "http://multiplatform-f.akamaihd.net/i/multi/will/bunny/big_buck_bunny_,640x360_400,640x360_700,640x360_1000,950x540_1500,.f4v.csmil/master.m3u8"
+  />
+  
+  <Favorite Name="The Making of Microsoft Surface" Url=
+    "http://wamsblureg001orig-hs.cloudapp.net/6651424c-a9d1-419b-895c-6993f0f48a26/The making of Microsoft Surface-m3u8-aapl.ism/Manifest(format=m3u8-aapl)"
+  />
+  <Favorite Name="The Making of Touch Cover" Url=
+    "http://wamsblureg001orig-hs.cloudapp.net/53bd66eb-8cba-43a8-99d2-1a2a47289fb4/The Making of Touch Cover for Surface-m3u8-aapl.ism/Manifest(format=m3u8-aapl)"
+  />
+  <Favorite Name="Windows 8 - You and Me Together" Url=
+    "http://wamsblureg001orig-hs.cloudapp.net/5389c0c5-340f-48d7-90bc-0aab664e5f02/Windows 8_ You and Me Together-m3u8-aapl.ism/Manifest(format=m3u8-aapl)"
+  />
+  <Favorite Name="Windows 8 - Sign in with a Smile" Url=
+    "http://wamsblureg001orig-hs.cloudapp.net/45d7294c-c22c-4b44-8c10-97b0b854fafd/Windows 8_ Sign in with a Smile-m3u8-aapl.ism/Manifest(format=m3u8-aapl)"
+  />
+  <Favorite Name="Windows 8 - Cliff Jumpers" Url=
+    "http://wamsblureg001orig-hs.cloudapp.net/722b7927-a0ec-4e75-b105-98ddfa29e791/Windows 8_ Cliffjumpers-m3u8-aapl.ism/Manifest(format=m3u8-aapl)"
+  />
+  <Favorite Name="The Surface Movement" Url=
+    "http://wamsblureg001orig-hs.cloudapp.net/8a84c882-210a-4419-90d9-12a50b9ff707/The Surface Movement-m3u8-aapl.ism/Manifest(format=m3u8-aapl)"
+  />
+  <Favorite Name="Windows Phone - Meet Steve" Url=
+    "http://wamsblureg001orig-hs.cloudapp.net/aa152d7f-3c54-487b-ba07-a58e0e33280b/wp-m3u8-aapl.ism/Manifest(format=m3u8-aapl)"
+  />
+   
+  <Favorite Name="Akamai Live" Url=
+    "http://multiformatlive-f.akamaihd.net/i/demostream_1@2131/master.m3u8"
+  />
+  
+  <Favorite Name="NASA Public TV Live" Url=
+    "http://public.infozen.cshls.lldns.net/infozen/public/public.m3u8"
+  />
+  
+</PermanentFavorites>

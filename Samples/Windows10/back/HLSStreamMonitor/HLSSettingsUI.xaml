@@ -1,0 +1,333 @@
+﻿<UserControl
+    x:Class="HLSStreamMonitor.HLSSettingsUI"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HLSStreamMonitor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="766"
+    d:DesignWidth="474.667">
+  <UserControl.Resources>
+    <local:BoolToVisibilityConverter x:Key="convertBoolToVisibility"/>
+    <local:TimeSpanToMilliSecondsDisplayConverter x:Key="convertTimeSpanToMillis"/>
+  </UserControl.Resources>
+
+  <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" HorizontalScrollMode="Auto" VerticalScrollMode="Auto">
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <StackPanel Orientation="Horizontal">
+        <RadioButton x:Name="btnBitrateSettings" Content="Bitrate Settings" GroupName="HLSSettings" Foreground="Black" FontSize="18"/>
+        <RadioButton x:Name="btnPlaybackSettings" Content="Playback Settings" GroupName="HLSSettings" Foreground="Black" FontSize="18" IsChecked="True" />
+      </StackPanel>
+      <Grid x:Name="gridBitrateSettings" Grid.Row="1" Visibility="{Binding ElementName=btnBitrateSettings,Path=IsChecked,Converter={StaticResource convertBoolToVisibility}}" Margin="0,15,0,0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ToggleSwitch x:Name="tsEnableBitrateMonitoring" Header="Monitor Bitrate Changes" IsOn="{Binding EnableAdaptiveBitrateMonitor,Mode=TwoWay}"
+                    HorizontalAlignment="Stretch" Margin="0,15,0,0" OffContent="Disabled" OnContent="Enabled"
+                    VerticalAlignment="Stretch" Foreground="Black" FontSize="18">
+          <ToggleSwitch.HeaderTemplate>
+            <DataTemplate>
+              <TextBlock Text="{Binding}" FontSize="18" Foreground="Black" FontWeight="Bold"/>
+            </DataTemplate>
+          </ToggleSwitch.HeaderTemplate>
+        </ToggleSwitch>
+        <Grid Grid.Row="1" Margin="0,15,0,0" Visibility="{ Binding ElementName=tsEnableBitrateMonitoring,Path=IsOn,Converter={StaticResource convertBoolToVisibility}}">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="243*"/>
+          </Grid.ColumnDefinitions>
+          <ToggleSwitch x:Name="tsTimeAverageBitrateChanges" Header="Time Averaging" HorizontalAlignment="Stretch" IsOn="{Binding UseTimeAveragedNetworkMeasure,Mode=TwoWay}"
+                      VerticalAlignment="Stretch" Grid.ColumnSpan="2" Foreground="Black" FontSize="18" OffContent="Off" OnContent="Measure" >
+            <ToggleSwitch.HeaderTemplate>
+              <DataTemplate>
+                <TextBlock Text="{Binding}" FontSize="18" Foreground="Black" FontWeight="Bold"/>
+              </DataTemplate>
+            </ToggleSwitch.HeaderTemplate>
+          </ToggleSwitch>
+          <Grid Grid.Column="1" Margin="5,0,0,0" Visibility="{Binding ElementName=tsTimeAverageBitrateChanges,Path=IsOn,Converter={StaticResource convertBoolToVisibility}}">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="17*"/>
+              <RowDefinition Height="62*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,7.5,0,0">
+              <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="every" VerticalAlignment="Center" FontSize="18" Foreground="Black" Margin="0,0,4,0" />
+              <TextBox x:Name="tbxBitrateMonitoringInterval" TextWrapping="Wrap" Text="{Binding BitrateChangeNotificationInterval,Mode=TwoWay,Converter={StaticResource convertTimeSpanToMillis}}" 
+                     FontSize="18"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,4,0" FontWeight="Bold"/>
+              <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ms" VerticalAlignment="Center" FontSize="18" Foreground="Black"/>
+            </StackPanel>
+          </Grid>
+        </Grid>
+
+        <ToggleSwitch x:Name="tsUpshiftBitrateInSteps" Header="Always Shift Bitrate Up In Steps" Grid.Row="2"
+                    IsOn="{Binding UpshiftBitrateInSteps,Mode=TwoWay}"
+                    HorizontalAlignment="Stretch" Margin="0,15,0,0" OffContent="Disable" OnContent="Enable"
+                    VerticalAlignment="Stretch" Foreground="Black" FontSize="18">
+          <ToggleSwitch.HeaderTemplate>
+            <DataTemplate>
+              <TextBlock Text="{Binding}" FontSize="18" Foreground="Black" FontWeight="Bold"/>
+            </DataTemplate>
+          </ToggleSwitch.HeaderTemplate>
+        </ToggleSwitch>
+
+        <Grid Grid.Row="3" Margin="5,15,0,0" Visibility="{ Binding ElementName=tsEnableBitrateMonitoring,Path=IsOn,Converter={StaticResource convertBoolToVisibility}}">
+          <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+          </Grid.ColumnDefinitions>
+          <TextBlock Text="Minimum Padding for Upshift" Foreground="Black" FontSize="18" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center"/>
+          <TextBox x:Name="tbxMinimumPaddingForBitrateUpshift" Grid.Column="1" Margin="5,0,0,0" Grid.Row="0" VerticalAlignment="Center" Text="{Binding MinimumPaddingForBitrateUpshift,Mode=TwoWay}"/>
+          <TextBlock Text="%" FontSize="18" Grid.Column="2" Foreground="Black" Margin="5,0,0,0" Grid.Row="0" VerticalAlignment="Center"/>
+          <TextBlock Text="Maximum Tolerance for Downshift" Foreground="Black" FontSize="18" Grid.Column="0" Grid.Row="1" Margin="0,5,0,0" VerticalAlignment="Center"/>
+          <TextBox x:Name="tbxMaximumToleranceForBitrateDownshift" Grid.Column="1" Margin="5,5,0,0" Grid.Row="1" VerticalAlignment="Center" Text="{Binding MaximumToleranceForBitrateDownshift,Mode=TwoWay}"/>
+          <TextBlock Text="%" FontSize="18" Grid.Column="2" Foreground="Black" Margin="5,5,0,0" Grid.Row="1" VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="4" Margin="5,15,0,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="12*"/>
+          </Grid.ColumnDefinitions>
+          <TextBlock Text="Bitrate Range" FontSize="18" Foreground="Black" Grid.ColumnSpan="6" Margin="0,0,0,10" FontWeight="Bold"/>
+          <TextBox TextWrapping="Wrap" Grid.Column="0" Grid.Row="2" x:Name="tbxStartBitrate" Text="{Binding StartBitrate,Mode=TwoWay}" />
+          <TextBox TextWrapping="Wrap"  Grid.Column="2" Grid.Row="2" x:Name="tbxMaxAllowedBitrate" Text="{Binding MaximumBitrate,Mode=TwoWay}" IsEnabled="{ Binding ElementName=tsEnableBitrateMonitoring,Path=IsOn}" />
+          <TextBox TextWrapping="Wrap"  Grid.Column="4" Grid.Row="2" x:Name="tbxMinAllowedBitrate" Text="{Binding MinimumBitrate,Mode=TwoWay}" IsEnabled="{ Binding ElementName=tsEnableBitrateMonitoring,Path=IsOn}"/>
+          <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Text="kbps" FontSize="14"   Foreground="Black" Margin="5,0,0,0"/>
+          <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="3" Grid.Row="2" Text="kbps" FontSize="14"   Foreground="Black" Margin="5,0,0,0"/>
+          <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="5"  Grid.Row="2" Text="kbps" FontSize="14"  Foreground="Black" Margin="5,0,0,0"/>
+
+
+          <TextBlock HorizontalAlignment="Left" TextWrapping="WrapWholeWords" VerticalAlignment="Center" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Text="Start At" FontSize="18"  Foreground="Black"  ToolTipService.ToolTip="The bitrate to start the presentation with." Margin="0,0,0,3.5"/>
+          <TextBlock HorizontalAlignment="Left" TextWrapping="WrapWholeWords" VerticalAlignment="Center" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1" Text="Max Allowed" FontSize="18"   Foreground="Black"  ToolTipService.ToolTip="Will not switch beyond this maximum value" Margin="0,0,0,3.5"/>
+          <TextBlock HorizontalAlignment="Left" TextWrapping="WrapWholeWords" VerticalAlignment="Center" Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="1" Text="Min Allowed" FontSize="18"    Foreground="Black"  ToolTipService.ToolTip="Will not switch below this minimm value" Margin="0,0,0,3.5"/>
+
+          <!--<TextBlock HorizontalAlignment="Right" TextWrapping="WrapWholeWords" VerticalAlignment="Center" Grid.Row="3" Text="Segment Try Limit:" ToolTipService.ToolTip="Number of segments to try a bitrate switch for before giving up and waiting for the next switch request"
+                   FontSize="18"  Foreground="Black"/>
+        <TextBox TextWrapping="Wrap" Text="" Grid.Column="1" Margin="4" Grid.Row="3"/>-->
+        </Grid>
+
+
+        <ToggleSwitch x:Name="tsAutoAdjustScrubbingBitrate" Header="Bitrate while Scrubbing" HorizontalAlignment="Stretch" Grid.Row="5"
+                    Margin="5,15,0,0" OffContent="Unchanged" OnContent="Auto Adjust" IsOn="{Binding AutoAdjustScrubbingBitrate,Mode=TwoWay}"
+                    VerticalAlignment="Stretch" Foreground="Black" FontSize="18">
+          <ToggleSwitch.HeaderTemplate>
+            <DataTemplate>
+              <TextBlock Text="{Binding}" FontSize="18" Foreground="Black" FontWeight="Bold"/>
+            </DataTemplate>
+          </ToggleSwitch.HeaderTemplate>
+        </ToggleSwitch>
+
+        <ToggleSwitch x:Name="tsAutoAdjustTrickPlayBitrate" Header="Bitrate while FF/REW" HorizontalAlignment="Stretch" Grid.Row="6"
+                    Margin="5,15,0,0" OffContent="Unchanged" OnContent="Auto Adjust" IsOn="{Binding AutoAdjustTrickPlayBitrate,Mode=TwoWay}"
+                    VerticalAlignment="Stretch" Foreground="Black" FontSize="18">
+          <ToggleSwitch.HeaderTemplate>
+            <DataTemplate>
+              <TextBlock Text="{Binding}" FontSize="18" Foreground="Black" FontWeight="Bold"/>
+            </DataTemplate>
+          </ToggleSwitch.HeaderTemplate>
+        </ToggleSwitch>
+
+        <Grid Grid.Row="7" Margin="5,15,0,0" Visibility="{ Binding ElementName=tsEnableBitrateMonitoring,Path=IsOn,Converter={StaticResource convertBoolToVisibility}}">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+          </Grid.ColumnDefinitions>
+          <TextBlock Text="Limit each bitrate switch attempt to " Foreground="Black" FontSize="18" Grid.Column="0" VerticalAlignment="Center"/>
+          <TextBox x:Name="tbxSegmentTryCountForBitrateSwitch" Grid.Column="1" Margin="5,0,0,0" VerticalAlignment="Center" Text="{Binding SegmentTryLimitOnBitrateSwitch,Mode=TwoWay}"/>
+          <TextBlock Text="segments" FontSize="18" Grid.Column="2" Foreground="Black" Margin="5,0,0,0"  VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="8" Margin="5,15,0,0" Visibility="{ Binding ElementName=tsEnableBitrateMonitoring,Path=IsOn,Converter={StaticResource convertBoolToVisibility}}">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+          </Grid.ColumnDefinitions>
+          <TextBlock Text="Match segments using " Foreground="Black" FontSize="18" Grid.Column="0" VerticalAlignment="Center"/>
+          <ComboBox x:Name="cbxMatchSegmentsUsing" Grid.Column="1" Margin="5,0,0,0" VerticalAlignment="Center" >
+            <ComboBox.ItemTemplate>
+              <DataTemplate>
+                <TextBlock Text="{Binding Description,Mode=OneWay}"/>
+              </DataTemplate>
+            </ComboBox.ItemTemplate>
+          </ComboBox>
+        </Grid>
+      </Grid>
+
+      <Grid x:Name="gridPlaybackSettings" Grid.Row="1" Visibility="{Binding ElementName=btnPlaybackSettings,Path=IsChecked,Converter={StaticResource convertBoolToVisibility}}" Margin="0,15,0,0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="5,15,0,0" >
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+          </Grid.ColumnDefinitions>
+          <TextBlock Text="Minimum Playback Buffer " Foreground="Black" FontSize="18" Grid.Column="0" VerticalAlignment="Center"/>
+          <TextBox x:Name="tbxMinimumBufferLength" Grid.Column="1" Margin="5,0,0,0" VerticalAlignment="Center" Text="{Binding MinimumBufferLength,Mode=TwoWay,Converter={StaticResource convertTimeSpanToMillis}}"/>
+          <TextBlock Text="ms" FontSize="18" Grid.Column="2" Foreground="Black" Margin="5,0,0,0"  VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="5,15,0,0" >
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+          </Grid.ColumnDefinitions>
+          <TextBlock Text="Minimum Prefetch Duration " Foreground="Black" FontSize="18" Grid.Column="0" VerticalAlignment="Center"/>
+          <TextBox x:Name="tbxPrefetchDuration" Grid.Column="1" Margin="5,0,0,0" VerticalAlignment="Center" Text="{Binding PrefetchDuration,Mode=TwoWay,Converter={StaticResource convertTimeSpanToMillis}}"/>
+          <TextBlock Text="ms" FontSize="18" Grid.Column="2" Foreground="Black" Margin="5,0,0,0"  VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="2" Margin="5,15,0,0" >
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+          </Grid.ColumnDefinitions>
+          <TextBlock Text="Minimum Live Playback Latency" Foreground="Black" FontSize="18" Grid.Column="0" VerticalAlignment="Center"/>
+          <TextBox x:Name="tbxLiveLatency" Grid.Column="1" Margin="5,0,0,0" VerticalAlignment="Center" Text="{Binding MinimumLiveLatency,Mode=TwoWay,Converter={StaticResource convertTimeSpanToMillis}}"/>
+          <TextBlock Text="ms" FontSize="18" Grid.Column="2" Foreground="Black" Margin="5,0,0,0"  VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="3" Margin="5,15,0,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="34*"/>
+          </Grid.ColumnDefinitions>
+          <TextBlock Text="PID Filter" FontSize="18" Foreground="Black" Grid.ColumnSpan="3" Margin="0,0,0,10" FontWeight="Bold"/>
+          <TextBox TextWrapping="Wrap" Text="{Binding VideoPID,Mode=TwoWay}" Grid.Column="0" Grid.Row="2" x:Name="tbxVideoPID" />
+          <TextBox TextWrapping="Wrap" Text="{Binding AudioPID,Mode=TwoWay}" Grid.Column="1" Grid.Row="2" Margin="5,0,0,0" x:Name="tbxAudioPID"/>
+          <TextBox TextWrapping="Wrap" Text="{Binding MetadataPID,Mode=TwoWay}" Grid.Column="2" Grid.Row="2" Margin="5,0,0,0" x:Name="tbxMetadataPID"/>
+          <TextBlock HorizontalAlignment="Left" TextWrapping="WrapWholeWords" VerticalAlignment="Center" Grid.Column="0"  Grid.Row="1" Text="Video" FontSize="18"  Foreground="Black"  ToolTipService.ToolTip="The bitrate to start the presentation with." Margin="0,0,0,3.5"/>
+          <TextBlock HorizontalAlignment="Left" TextWrapping="WrapWholeWords" VerticalAlignment="Center" Grid.Column="1"  Grid.Row="1" Text="Audio" Margin="5,0,0,3.5" FontSize="18"   Foreground="Black"  ToolTipService.ToolTip="Will not switch beyond this maximum value" />
+          <TextBlock HorizontalAlignment="Left" TextWrapping="WrapWholeWords" VerticalAlignment="Center" Grid.Column="2"  Grid.Row="1" Text="Metadata" Margin="5,0,0,3.5" FontSize="18"    Foreground="Black"  ToolTipService.ToolTip="Will not switch below this minimm value"  />
+        </Grid>
+
+
+
+        <ToggleSwitch x:Name="tsAllowScrubbing" Header="Scrubbing Behavior" HorizontalAlignment="Stretch" Grid.Row="4"
+                    Margin="0,15,0,0" OffContent="Seek" OnContent="Scrub" IsOn="False"
+                    VerticalAlignment="Stretch" Foreground="Black" FontSize="18">
+          <ToggleSwitch.HeaderTemplate>
+            <DataTemplate>
+              <TextBlock Text="{Binding}" FontSize="18" Foreground="Black" FontWeight="Bold"/>
+            </DataTemplate>
+          </ToggleSwitch.HeaderTemplate>
+        </ToggleSwitch>
+
+        <Grid Grid.Row="5" Margin="5,15,0,0" >
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+          </Grid.ColumnDefinitions>
+          <TextBlock Text="Lock Playback To " Foreground="Black" FontSize="18" Grid.Column="0" VerticalAlignment="Center"/>
+          <ComboBox x:Name="cbxAvailableBitrates" Grid.Column="1" Margin="5,0,0,0" VerticalAlignment="Center" IsEnabled="False" >
+            <ComboBox.ItemTemplate>
+              <DataTemplate>
+                <TextBlock Text="{Binding Description,Mode=OneWay}"/>
+              </DataTemplate>
+            </ComboBox.ItemTemplate>
+          </ComboBox>
+        </Grid>
+        <Grid Grid.Row="6" Margin="5,15,0,0" >
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+          </Grid.ColumnDefinitions>
+          <TextBlock Text="Playback Speed " Foreground="Black" FontSize="18" Grid.Column="0" VerticalAlignment="Center"/>
+          <ComboBox x:Name="cbxRates" Grid.Column="1" Margin="5,0,0,0" VerticalAlignment="Center">
+            <ComboBox.ItemTemplate>
+              <DataTemplate>
+                <TextBlock Text="{Binding Description,Mode=OneWay}"/>
+              </DataTemplate>
+            </ComboBox.ItemTemplate>
+          </ComboBox>
+        </Grid>
+        <Grid Grid.Row="7" Margin="5,15,0,0" >
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+          </Grid.ColumnDefinitions>
+          <TextBlock Text="Closed Caption Type " Foreground="Black" FontSize="18" Grid.Column="0" VerticalAlignment="Center"/>
+          <ComboBox x:Name="cbxCCType" Grid.Column="1" Margin="5,0,0,0" VerticalAlignment="Center">
+            <ComboBox.ItemTemplate>
+              <DataTemplate>
+                <TextBlock Text="{Binding Description,Mode=OneWay}"/>
+              </DataTemplate>
+            </ComboBox.ItemTemplate>
+          </ComboBox>
+        </Grid>
+        <ToggleSwitch x:Name="tsLiveResumeAtPaused" Header="Resume Live From Paused Position (or earliest possible)" HorizontalAlignment="Stretch" Grid.Row="8"
+                    Margin="0,15,0,0" OffContent="False" OnContent="True" IsOn="{Binding ResumeLiveFromPausedOrEarliest,Mode=TwoWay}"
+                    VerticalAlignment="Stretch" Foreground="Black" FontSize="18">
+          <ToggleSwitch.HeaderTemplate>
+            <DataTemplate>
+              <TextBlock Text="{Binding}" FontSize="18" Foreground="Black" FontWeight="Bold"/>
+            </DataTemplate>
+          </ToggleSwitch.HeaderTemplate>
+        </ToggleSwitch>
+        <ToggleSwitch x:Name="tsForceAudioOnly" Header="Force Audio Only" HorizontalAlignment="Stretch" Grid.Row="9"
+                    Margin="0,15,0,0" OffContent="False" OnContent="True" IsOn="{Binding ForceAudioOnly,Mode=TwoWay}"
+                    VerticalAlignment="Stretch" Foreground="Black" FontSize="18">
+          <ToggleSwitch.HeaderTemplate>
+            <DataTemplate>
+              <TextBlock Text="{Binding}" FontSize="18" Foreground="Black" FontWeight="Bold"/>
+            </DataTemplate>
+          </ToggleSwitch.HeaderTemplate>
+        </ToggleSwitch>
+
+      </Grid>
+
+
+    </Grid>
+  </ScrollViewer>
+</UserControl>

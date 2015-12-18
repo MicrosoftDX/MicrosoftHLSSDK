@@ -128,7 +128,7 @@
     <SDKReference Include="Microsoft HLS SDK for Windows, Version=1.2.1.0">
       <Name>Microsoft HLS SDK for Windows</Name>
     </SDKReference>
-    <SDKReference Include="Microsoft.PlayerFramework.Xaml, Version=3.0.0.0">
+    <SDKReference Include="Microsoft.PlayerFramework.Xaml.UWP, Version=3.0.0.2">
       <Name>Microsoft Player Framework</Name>
     </SDKReference>
     <SDKReference Include="Microsoft.VCLibs, Version=14.0">

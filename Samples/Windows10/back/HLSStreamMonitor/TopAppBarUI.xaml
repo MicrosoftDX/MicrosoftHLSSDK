@@ -1,0 +1,86 @@
+﻿<UserControl
+    x:Class="HLSStreamMonitor.TopAppBarUI"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HLSStreamMonitor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+
+  <Grid Background="Transparent" x:Name="LayoutRoot">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition/>
+      <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+    <TextBox HorizontalAlignment="Stretch" TextAlignment="Justify" x:Name="tbxURL"
+    			TextWrapping="Wrap" VerticalAlignment="Stretch" Grid.Column="1" TextChanged="tbxURL_TextChanged"
+    			PlaceholderText="Enter URL for HLS Playlist or enter a set of URL's on seperate lines for batched playback" 
+             FontSize="17" InputScope="Url" AcceptsReturn="True" />
+    <Grid Grid.Row="0" Grid.Column="0">
+      <Grid.RowDefinitions>
+        <RowDefinition/>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+      <Button  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ToolTipService.ToolTip="Add Playlist to Favorites" x:Name="btnAddToFav" Tapped="btnAddToFav_Tapped" IsEnabled="False">
+        <Button.Template>
+          <ControlTemplate TargetType="Button"> 
+            <Grid> 
+              <Image HorizontalAlignment="Left"  VerticalAlignment="Top" Height="64" Width="64"  Source="Assets/appbar.page.add.png"/>
+            </Grid>
+          </ControlTemplate>
+        </Button.Template>
+        <FlyoutBase.AttachedFlyout>
+          <Flyout>
+            <local:FavoritesUI x:Name="ucAddToFav"/>
+            <Flyout.FlyoutPresenterStyle>
+              <Style TargetType="FlyoutPresenter">
+                <Setter Property="MinWidth" Value="1000"/>
+                <Setter Property="MaxWidth" Value="1200"/>
+              </Style>
+            </Flyout.FlyoutPresenterStyle>
+          </Flyout>
+        </FlyoutBase.AttachedFlyout>
+      </Button>
+      <Button  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" ToolTipService.ToolTip="Show Favorites" x:Name="btnShowFavs" Tapped="btnShowFavs_Tapped">
+        <Button.Template>
+          <ControlTemplate TargetType="Button">
+            <Grid>
+              <Image HorizontalAlignment="Left"  VerticalAlignment="Top"  Height="64" Width="64" Source="Assets/appbar.list.png"/>
+            </Grid>
+          </ControlTemplate>
+        </Button.Template>
+        <FlyoutBase.AttachedFlyout>
+          <Flyout>
+            <local:FavoritesUI x:Name="ucSelectFav"/>
+            <Flyout.FlyoutPresenterStyle>
+              <Style TargetType="FlyoutPresenter">
+                <Setter Property="MinWidth" Value="1000"/>
+                <Setter Property="MaxWidth" Value="1200"/>
+                <Setter Property="MinHeight" Value="400"/>
+                <Setter Property="MaxHeight" Value="600"/>
+              </Style>
+            </Flyout.FlyoutPresenterStyle>
+          </Flyout>
+        </FlyoutBase.AttachedFlyout>
+      </Button>
+    </Grid>
+    <Button  HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" ToolTipService.ToolTip="Start Playlist" Margin="5" x:Name="btnPlay" Tapped="btnPlay_Tapped">
+      <Button.Template>
+        <ControlTemplate TargetType="Button">
+          <Grid>
+            <Image HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Height="80" Width="80" Source="Assets/appbar.monitor.play.png"/>
+          </Grid>
+        </ControlTemplate>
+      </Button.Template>
+    </Button>
+    
+   
+  </Grid>
+
+
+
+</UserControl>

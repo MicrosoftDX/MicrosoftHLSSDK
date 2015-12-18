@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+// The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
+
 namespace HLSStreamMonitor
 {
     /// <summary>
@@ -28,12 +30,17 @@ namespace HLSStreamMonitor
         /// </summary>
         public App()
         {
-      Microsoft.ApplicationInsights.WindowsAppInitializer.InitializeAsync(
-        Microsoft.ApplicationInsights.WindowsCollectors.Metadata |
-        Microsoft.ApplicationInsights.WindowsCollectors.Session);
-      this.InitializeComponent();
+            this.InitializeComponent();
             this.Suspending += OnSuspending;
+            this.UnhandledException += App_UnhandledException;
         }
+
+        void App_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+        {
+          return;
+        }
+
+         
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
@@ -42,7 +49,7 @@ namespace HLSStreamMonitor
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-
+           
 
             Frame rootFrame = Window.Current.Content as Frame;
 
@@ -52,6 +59,8 @@ namespace HLSStreamMonitor
             {
                 // Create a Frame to act as the navigation context and navigate to the first page
                 rootFrame = new Frame();
+                // Set the default language
+                rootFrame.Language = Windows.Globalization.ApplicationLanguages.Languages[0];
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
@@ -98,5 +107,8 @@ namespace HLSStreamMonitor
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+
+
+      
     }
 }
